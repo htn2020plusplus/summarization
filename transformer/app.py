@@ -41,5 +41,5 @@ if __name__ == '__main__':
     model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
     summarizer = pipeline("summarization")
 
-    app.run(host="0.0.0.0", port=int(os.environ['PORT']) or 5000)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
 
