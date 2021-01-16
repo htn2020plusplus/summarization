@@ -1,8 +1,6 @@
-
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
 tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
 model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
-
 
 ARTICLE = """
 Fisheries and Oceans Canada conducted an ecosystem-based survey from October 6-16,
