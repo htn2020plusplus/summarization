@@ -46,6 +46,33 @@ def summarizeReq():
 
     return jsonify({'summary': answer}), 200
 
+@app.route('/api/categorize', methods=['POST'])
+def categorize():
+    categories = [
+        "environmental",
+        "defence",
+        "education",
+        "economy",
+        "legal",
+        "energy",
+        "social development",
+        "healthcare",
+        "indigenous",
+        "technology",
+        "parliament",
+        "infrastructure",
+        "agriculture",
+        "media"
+    ]
+
+    data = flask.request.form  # is a dictionary
+    text = data['text']
+    logging.info(f"got categorization request of length {len(text)}")
+
+    res = classifier(text, categories, multi_class=True)
+    res_proc = dict((key, value) for key, value in zip(res['labels'], res['scores']))
+
+    return jsonify(res_proc), 200
 
 @app.route('/api/ner', methods=['POST'])
 def nerReq():
@@ -98,9 +125,8 @@ def nerReq():
 
 logging.info("Starting server...")
 
-tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
-model = AutoModelForSeq2SeqLM.from_pretrained(
-    "sshleifer/distilbart-cnn-12-6")
+# tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
+# model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
 ner_model = AutoModelForTokenClassification.from_pretrained(
     "dbmdz/bert-large-cased-finetuned-conll03-english")
 ner_tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
@@ -108,6 +134,7 @@ ner_tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
 summarizer = pipeline("summarization")
 ner = pipeline("ner", model=ner_model,
                 tokenizer=ner_tokenizer, grouped_entities=True)
+classifier = pipeline("zero-shot-classification")
 
 logging.info("Models loaded.")
 

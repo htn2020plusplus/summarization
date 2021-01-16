@@ -36,13 +36,14 @@ async function parse(name) {
 		}
 	}
 
+	// perform named entity recognition
 	const full = res.join(" ")
 	const r = await axios.post(api_url + "/ner", querystring.stringify({ text: full }))
 
 	const retData = JSON.stringify({
 		named_entities: r.data,
 		summary: full,
-	})
+	}, null, 4)
 
 	fs.writeFile(`./results/${name}.json`, retData, (err) => {
 		if (err) {
