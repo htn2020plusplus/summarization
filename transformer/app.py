@@ -61,6 +61,7 @@ def categorize():
         "technology",
         "parliament",
         "infrastructure",
+        "transportation",
         "agriculture",
         "media"
     ]

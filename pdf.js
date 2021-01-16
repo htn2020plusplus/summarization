@@ -36,12 +36,18 @@ async function parse(name) {
 		}
 	}
 
-	// perform named entity recognition
+	console.log("performing named entity recognition...")
 	const full = res.join(" ")
 	const r = await axios.post(api_url + "/ner", querystring.stringify({ text: full }))
 
+	const CATEGORY_THRESH = 0.4
+	const c = await axios.post(api_url + "/categorize", querystring.stringify({ text: full }))
+	console.log(c)
+	const categories = Object.keys(c.data).filter(cat => c.data[cat] > CATEGORY_THRESH)
+
 	const retData = JSON.stringify({
 		named_entities: r.data,
+		categories: categories,
 		summary: full,
 	}, null, 4)
 
