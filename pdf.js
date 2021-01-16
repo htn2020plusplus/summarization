@@ -4,7 +4,6 @@ const axios = require('axios');
 const querystring = require('querystring');
 
 const api_url = "http://localhost:5000/api"
-let dataBuffer = fs.readFileSync('./testing/test-senior.pdf');
 
 // turn arr into 'chunks' of chunkSize
 function chunk(arr, chunkSize) {
@@ -14,10 +13,12 @@ function chunk(arr, chunkSize) {
 	return res;
 }
 
+async function parse(name) {
+	let dataBuffer = fs.readFileSync(`./dataset/${name}.pdf`);
+	const MAX_TOK_SIZE = 512
+	const data = await pdf(dataBuffer)
 
-const MAX_TOK_SIZE = 512
-pdf(dataBuffer).then(async function(data) {
-	cleanedText = data.text.replace(/(\r\n|\n|\r)/gm,"")
+	cleanedText = data.text.replace(/(\r\n|\n|\r)/gm, "")
 	tokens = cleanedText.split(" ")
 	chunks = chunk(tokens, Math.round(MAX_TOK_SIZE)).map(c => c.join(" "))
 
@@ -38,13 +39,16 @@ pdf(dataBuffer).then(async function(data) {
 	const full = res.join(" ")
 	const r = await axios.post(api_url + "/ner", querystring.stringify({ text: full }))
 
-	const retData = {
-		ner: r,
+	const retData = JSON.stringify({
+		named_entities: r.data,
 		summary: full,
-	}
-	fs.writeFile("res.json", retData, (err) => {
+	})
+
+	fs.writeFile(`./results/${name}.json`, retData, (err) => {
 		if (err) {
 			console.log(err);
 		}
 	});
-})
+}
+
+exports.parse = parse

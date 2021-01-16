@@ -33,8 +33,8 @@ def summarizeReq():
     text = data['text']
     logging.info(f"got summarization request of length {len(text)}")
 
-    answer = summarizer(text, max_length=1024,
-                        min_length=30, do_sample=False)
+    answer = summarizer(text, max_length=50,
+                        min_length=15, do_sample=False)
 
     # process
     # get first rest
