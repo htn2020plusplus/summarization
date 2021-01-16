@@ -4,67 +4,70 @@
             {
                 "end": 18,
                 "entity_group": "organization",
-                "score": 0.9975212216377258,
+                "score": 0.9977132380008698,
                 "start": 1,
                 "word": "Statistics Canada"
             },
             {
-                "end": 245,
+                "end": 223,
                 "entity_group": "organization",
-                "score": 0.9975576996803284,
-                "start": 228,
+                "score": 0.9983387887477875,
+                "start": 206,
                 "word": "Statistics Canada"
             },
             {
-                "end": 1092,
-                "entity_group": "location",
-                "score": 0.794874370098114,
-                "start": 1086,
-                "word": "Canada"
+                "end": 844,
+                "entity_group": "organization",
+                "score": 0.8338153660297394,
+                "start": 825,
+                "word": "Quebec Pension Plan"
             },
             {
-                "end": 1116,
+                "end": 959,
                 "entity_group": "organization",
-                "score": 0.8199487527211508,
-                "start": 1104,
-                "word": "Pension Plan"
-            },
-            {
-                "end": 1231,
-                "entity_group": "organization",
-                "score": 0.9594642718633016,
-                "start": 1210,
+                "score": 0.9531332651774088,
+                "start": 938,
                 "word": "Canadian Armed Forces"
             },
             {
-                "end": 1262,
+                "end": 990,
                 "entity_group": "organization",
-                "score": 0.78889200091362,
-                "start": 1259,
+                "score": 0.8396963179111481,
+                "start": 987,
                 "word": "LFS"
             },
             {
-                "end": 1342,
+                "end": 1070,
                 "entity_group": "organization",
-                "score": 0.9202487468719482,
-                "start": 1341,
+                "score": 0.9483501315116882,
+                "start": 1069,
                 "word": "L"
             },
             {
-                "end": 1466,
+                "end": 1194,
                 "entity_group": "location",
-                "score": 0.9950811266899109,
-                "start": 1460,
+                "score": 0.9863831996917725,
+                "start": 1188,
                 "word": "Canada"
             },
             {
-                "end": 1951,
+                "end": 1528,
                 "entity_group": "organization",
-                "score": 0.7102222144603729,
-                "start": 1948,
+                "score": 0.7526600658893585,
+                "start": 1525,
+                "word": "LFS"
+            },
+            {
+                "end": 1716,
+                "entity_group": "organization",
+                "score": 0.7590058147907257,
+                "start": 1713,
                 "word": "LFS"
             }
         ]
     },
-    "summary": " Statistics Canada offers experimental estimates of family weekly income for January to September 2020. The unprecedented economic situation brought on by the COVID-19 pandemic has increased the demand for trusted information.  Statistics Canada is developing an experimental method for examining family weekly income patterns during the pandemic. The approach integrates weekly earnings available from the Canadian Labour Force Survey (LFS) together with information specific to government transfers including special COVID-19 benefits collected through administrative data sources and imputation. Initial findings suggest that CERB benefits offset a potential surge in low income from February 2020 to April 2020 for a large portion of Canadian families.  Several one-time increases to payments under various means-tested programs were also introduced during the pandemic. Disposable income increased 10.8% in the second quarter due to the decline in wages and salaries being more than offset by the relief programs.  Income for seniors is largely composed of private pension income, Canada and Quebec Pension Plan income, Old Age Security and Guaranteed Income Supplement benefits. Full‑time members of the Canadian Armed Forces are also excluded from the LFS sample.  Chart 1 shows benchmark estimates of aggregate CERB benefits in each LFS reference week. The benefits accounted for in this study compare well to statistics published by the government of Canada. The results show that an important outcome was to reduce the increase in the share of persons with zero earnings.  Chart 3 presents experimental estimates of low-family weekly income according to various income measures. The share of persons in non-senior, non-self-employed families with below-LIM weekly earnings rose from 26% in February to 38% in April. Chart 3 also shows estimates for low income without the imputation of CERB records.  Over the course of the pandemic, the LFS collection was adapted by replacing face-to-face interviews by telephone interviews, resulting in a lower response rate. No study has been completed regarding the effects of declining LFS response rates on weekly earnings. The self-employed experienced a much larger drop in hours worked compared to employees."
+    "categories": [
+        "economy"
+    ],
+    "summary": " Statistics Canada has developed standards of service that its employees observe. The unprecedented economic situation brought on by the COVID-19 pandemic has increased the demand for trusted information.  Statistics Canada is developing an experimental method for examining family weekly income patterns during the pandemic. The approach integrates weekly earnings available from the Canadian Labour Force Survey (LFS) together with information specific to government transfers including special COVID-19  Several one-time increases to payments under various means-tested programs were also introduced during the pandemic. Disposable income increased 10.8% in the second quarter due to the decline in wages and salaries being more than offset by  Income for seniors is largely composed of private pension income, Canada and Quebec Pension Plan income, Old Age Security and Guaranteed Income Supplement benefits. Full‑time members of the Canadian Armed Forces are also excluded from the LFS sample.  Chart 1 shows benchmark estimates of aggregate CERB benefits in each LFS reference week. The benefits accounted for in this study compare well to statistics published by the government of Canada. The results show that an important outcome was to reduce the  Chart 3 presents experimental estimates of low-family weekly income according to various income measures. The share of persons in non-senior, non-self-employed families with below-LIM weekly earnings rose from 26% in February to  Over the course of the pandemic, the LFS collection was adapted by replacing face-to-face interviews by telephone interviews, resulting in a lower response rate. No study has been completed regarding the effects of declining LFS response rates"
 }

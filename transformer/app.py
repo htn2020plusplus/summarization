@@ -31,10 +31,9 @@ def healthCheck():
 def summarizeReq():
     data = flask.request.form  # is a dictionary
     text = data['text']
-    logging.info(f"got summarization request of length {len(text)}")
+    print(f"got summarization request of length {len(text)}")
 
-    answer = summarizer(text, max_length=50,
-                        min_length=15, do_sample=False)
+    answer = summarizer(text, max_length=150, min_length=15, do_sample=False)
 
     # process
     # get first rest
@@ -68,7 +67,7 @@ def categorize():
 
     data = flask.request.form  # is a dictionary
     text = data['text']
-    logging.info(f"got categorization request of length {len(text)}")
+    print(f"got categorization request of length {len(text)}")
 
     res = classifier(text, categories, multi_class=True)
     res_proc = dict((key, value) for key, value in zip(res['labels'], res['scores']))
@@ -79,7 +78,7 @@ def categorize():
 def nerReq():
     data = flask.request.form  # is a dictionary
     text = data['text']
-    logging.info(f"got ner request of length {len(text)}")
+    print(f"got ner request of length {len(text)}")
 
     # tokens = ner_tokenizer.tokenize(
     #     ner_tokenizer.decode(ner_tokenizer.encode(text)))

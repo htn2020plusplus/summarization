@@ -27,12 +27,13 @@ async function parse(name) {
 	const res = []
 
 	for (var i = 0; i < chunks.length; i++) {
-		const r = await axios.post(api_url + "/summarize", querystring.stringify({ text: chunks[i] }))
-
-		if (r.data) {
+		try {
+			const r = await axios.post(api_url + "/summarize", querystring.stringify({ text: chunks[i] }))
 			const t = r.data.summary
 			console.log(`[${i}] -> ${t}`)
 			res.push(t)
+		} catch (e) {
+			console.log(`uhoh: ${e}`)
 		}
 	}
 
