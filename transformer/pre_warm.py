@@ -1,6 +1,9 @@
-from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
+import torch
+from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForTokenClassification
 tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
-model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
+summarization_model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
+ner_model = AutoModelForTokenClassification.from_pretrained("dbmdz/bert-large-cased-finetuned-conll03-english")
+ner_tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
 
 ARTICLE = """
 Fisheries and Oceans Canada conducted an ecosystem-based survey from October 6-16,
