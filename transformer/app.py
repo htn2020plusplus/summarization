@@ -71,11 +71,12 @@ def nerReq():
         "LOC": "location",
     }
 
-    NER_THRESH = float(request.args.get('ner_thred', '0.8'))
+    NER_THRESH = float(request.args.get('ner_thres', '0.7'))
     DISCARD_MISC = request.args.get('discard_misc', 'yes')
     DISCARD_MISC = DISCARD_MISC == 'yes'
 
     ners = ner(text)
+    filtered_ners = []
     for entity in ners:
 
         # perform mapping
@@ -86,11 +87,14 @@ def nerReq():
         entity["start"] = int(entity["start"])
         entity["end"] = int(entity["end"])
 
-    # ner conf thresholding
+        # filtering
+        valid_score = entity["score"] > NER_THRESH
+        should_discard = DISCARD_MISC and entity["entity_group"] == 'misc'
 
-    # misc discarding
+        if valid_score and not should_discard:
+            filtered_ners.append(entity)
 
-    return jsonify({"entities": ners}), 200
+    return jsonify({"entities": filtered_ners}), 200
 
 
 if __name__ == '__main__':
