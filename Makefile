@@ -5,6 +5,8 @@ help: ## Show all Makefile targets
 
 run: ## run local
 	cd transformer && python app.py
+guni: ## run gunicorn threaded vers
+	cd transformer && gunicorn --bind 0.0.0.0:5000 wsgi:app --log-level=debug -t 120 --workers=4
 d-build: ## build docker
 	cd transformer && docker build . -t legist-summarizer:latest
 d-run: ## run docker

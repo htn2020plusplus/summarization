@@ -33,7 +33,7 @@ def summarizeReq():
     text = data['text']
     logging.info(f"got summarization request of length {len(text)}")
 
-    answer = summarizer(text, max_length=4096,
+    answer = summarizer(text, max_length=1024,
                         min_length=30, do_sample=False)
 
     # process
@@ -96,19 +96,20 @@ def nerReq():
 
     return jsonify({"entities": filtered_ners}), 200
 
+logging.info("Starting server...")
+
+tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
+model = AutoModelForSeq2SeqLM.from_pretrained(
+    "sshleifer/distilbart-cnn-12-6")
+ner_model = AutoModelForTokenClassification.from_pretrained(
+    "dbmdz/bert-large-cased-finetuned-conll03-english")
+ner_tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
+
+summarizer = pipeline("summarization")
+ner = pipeline("ner", model=ner_model,
+                tokenizer=ner_tokenizer, grouped_entities=True)
+
+logging.info("Models loaded.")
 
 if __name__ == '__main__':
-    logging.info("Starting server...")
-
-    tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
-    model = AutoModelForSeq2SeqLM.from_pretrained(
-        "sshleifer/distilbart-cnn-12-6")
-    ner_model = AutoModelForTokenClassification.from_pretrained(
-        "dbmdz/bert-large-cased-finetuned-conll03-english")
-    ner_tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
-
-    summarizer = pipeline("summarization")
-    ner = pipeline("ner", model=ner_model,
-                   tokenizer=ner_tokenizer, grouped_entities=True)
-
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
