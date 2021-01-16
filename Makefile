@@ -8,4 +8,4 @@ run: ## run local
 d-build: ## build docker
 	cd transformer && docker build . -t legist-summarizer:latest
 d-run: ## run docker
-	docker run legist-summarizer:latest
+	docker run -p 5000:5000 legist-summarizer:latest
