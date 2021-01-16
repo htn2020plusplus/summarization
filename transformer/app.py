@@ -9,18 +9,17 @@ from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM, AutoMod
 
 app = flask.Flask(__name__)
 
-ner_labels = [
-    "O",       # Outside of a named entity
-    "B-MISC",  # Beginning of a miscellaneous entity right after another miscellaneous entity
-    "I-MISC",  # Miscellaneous entity
-    "B-PER",   # Beginning of a person's name right after another person's name
-    "I-PER",   # Person's name
-    "B-ORG",   # Beginning of an organisation right after another organisation
-    "I-ORG",   # Organisation
-    "B-LOC",   # Beginning of a location right after another location
-    "I-LOC"    # Location
-]
-
+# ner_labels = [
+#     "O",       # Outside of a named entity
+#     "B-MISC",  # Beginning of a miscellaneous entity right after another miscellaneous entity
+#     "I-MISC",  # Miscellaneous entity
+#     "B-PER",   # Beginning of a person's name right after another person's name
+#     "I-PER",   # Person's name
+#     "B-ORG",   # Beginning of an organisation right after another organisation
+#     "I-ORG",   # Organisation
+#     "B-LOC",   # Beginning of a location right after another location
+#     "I-LOC"    # Location
+# ]
 
 @app.route('/', methods=['GET'])
 def healthCheck():
@@ -29,7 +28,7 @@ def healthCheck():
 
 
 @app.route('/api/summarize', methods=['POST'])
-def summarize():
+def summarizeReq():
     data = flask.request.form  # is a dictionary
     text = data['text']
     logging.info(f"got summarization request of length {len(text)}")
@@ -49,27 +48,63 @@ def summarize():
 
 
 @app.route('/api/ner', methods=['POST'])
-def ner():
+def nerReq():
     data = flask.request.form  # is a dictionary
     text = data['text']
     logging.info(f"got ner request of length {len(text)}")
 
-    tokens = ner_tokenizer.tokenize(
-        ner_tokenizer.decode(tokenizer.encode(text)))
-    inputs = ner_tokenizer.encode(text, return_tensors="pt")
-    outputs = ner_model(inputs)[0]
-    predictions = torch.argmax(outputs, dim=2)
+    # tokens = ner_tokenizer.tokenize(
+    #     ner_tokenizer.decode(ner_tokenizer.encode(text)))
+    # inputs = ner_tokenizer.encode(text, return_tensors="pt")
+    # outputs = ner_model(inputs)[0]
+    # predictions = torch.argmax(outputs, dim=2)
 
-    return jsonify({'tokens': [(token, ner_labels[prediction]) for token, prediction in zip(tokens, predictions[0].tolist())]}), 200
+    # tok_pred_iter = zip(tokens, predictions[0].tolist())
+
+    # # filter
+    # res = [(token, ner_labels[prediction]) if prediction != 0 for token, prediction in tok_pred_iter]
+
+    ner_label_mappings = {
+        "MISC": "misc",
+        "ORG": "organization",
+        "PER": "person",
+        "LOC": "location",
+    }
+
+    NER_THRESH = float(request.args.get('ner_thred', '0.8'))
+    DISCARD_MISC = request.args.get('discard_misc', 'yes')
+    DISCARD_MISC = DISCARD_MISC == 'yes'
+
+    ners = ner(text)
+    for entity in ners:
+
+        # perform mapping
+        entity["entity_group"] = ner_label_mappings[entity["entity_group"]]
+
+        # cast np int64 back to python float for json dump
+        entity["score"] = float(entity["score"])
+        entity["start"] = int(entity["start"])
+        entity["end"] = int(entity["end"])
+
+    # ner conf thresholding
+
+    # misc discarding
+
+    return jsonify({"entities": ners}), 200
+
 
 if __name__ == '__main__':
     logging.info("Starting server...")
 
     tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
-    model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
-    ner_model = AutoModelForTokenClassification.from_pretrained("dbmdz/bert-large-cased-finetuned-conll03-english")
+    model = AutoModelForSeq2SeqLM.from_pretrained(
+        "sshleifer/distilbart-cnn-12-6")
+    ner_model = AutoModelForTokenClassification.from_pretrained(
+        "dbmdz/bert-large-cased-finetuned-conll03-english")
     ner_tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
+
     summarizer = pipeline("summarization")
+    ner = pipeline("ner", model=ner_model,
+                   tokenizer=ner_tokenizer, grouped_entities=True)
 
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
-
