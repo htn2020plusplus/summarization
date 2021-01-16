@@ -2,6 +2,7 @@ from flask import request
 from flask import jsonify
 import flask
 import logging
+import os
 
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
 
@@ -20,7 +21,7 @@ def parseIntent():
     text = data['text']
     logging.info(f"got pred request of length {len(text)}")
 
-    answer = summarizer(text, max_length=500,
+    answer = summarizer(text, max_length=4096,
                         min_length=30, do_sample=False)
 
     # process
@@ -40,5 +41,5 @@ if __name__ == '__main__':
     model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
     summarizer = pipeline("summarization")
 
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=int(os.environ['PORT']) or 5000)
 
