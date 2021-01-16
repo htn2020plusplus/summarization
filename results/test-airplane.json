@@ -31,6 +31,8 @@
             }
         ]
     },
-    "categories": [],
+    "categories": [
+        "legal"
+    ],
     "summary": " This guide is for airlines licensed by the Canadian Transportation Agency to provide non-scheduled services to and from Canada. It explains the CTA's requirements for licensees that want to operate international charter flights. The guide covers both passenger  If you want to operate an international charter flight to carry passengers or goods using a large aircraft, the following tables describe whether you must apply for a permit, give us notice before the flight or provide a report after the flight. Permits  A CTA Member or Members will consider your application and decide whether to give you the international charter permit. For foreign applicants, the Member(s) will also consider whether the airline's home country allows Canadian airlines to operate charters to  Charter flight is one-way or round-trip flight that is not part of airline's regular schedule. Passenger resaleable charter is a passenger charter on which the company or person who charters the aircraft sells seats to the public."
 }

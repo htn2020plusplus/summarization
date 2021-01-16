@@ -5,6 +5,7 @@ This repository contains the files and modules do
 * Text summarization (DistilBART-CNN)
 * Named entity recognition (BERT-Large)
   * Can identiy organizations, people, locations, and misc.
+* Zero-shot Categorization (BART-Large)
 * PDF-to-text parsing
 
 You can find our ML models in the `/transformer` folder. Within it, the `app.py` is our actual API server. It can be started via Docker container too!
@@ -64,4 +65,24 @@ $ curl -X POST localhost:5000/api/summarization --form 'text=...'
 }
 ```
 
-todo: more details
+### Zero-shot classification -- `/api/categorization`
+```bash
+$ curl -X POST localhost:5000/api/categorization --form 'text=...'
+
+{
+    "agriculture": 0.024784492328763008,
+    "defence": 0.1793070286512375,
+    "economy": 0.48788025975227356,
+    "education": 0.05529370158910751,
+    "energy": 0.1122642457485199,
+    "environmental": 0.026572316884994507,
+    "healthcare": 0.04257747530937195,
+    "indigenous": 0.11204517632722855,
+    "infrastructure": 0.1094297543168068,
+    "legal": 0.5790539383888245,
+    "media": 0.23331807553768158,
+    "parliament": 0.11976903676986694,
+    "social development": 0.6372514963150024,
+    "technology": 0.07259909063577652
+}
+```
