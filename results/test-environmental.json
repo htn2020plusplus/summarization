@@ -1,0 +1,76 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 107,
+                "entity_group": "organization",
+                "score": 0.9589992761611938,
+                "start": 104,
+                "word": "DND"
+            },
+            {
+                "end": 666,
+                "entity_group": "organization",
+                "score": 0.9989154487848282,
+                "start": 636,
+                "word": "Department of National Defence"
+            },
+            {
+                "end": 671,
+                "entity_group": "organization",
+                "score": 0.9985229969024658,
+                "start": 668,
+                "word": "DND"
+            },
+            {
+                "end": 716,
+                "entity_group": "organization",
+                "score": 0.9989482164382935,
+                "start": 677,
+                "word": "Defence Research and Development Canada"
+            },
+            {
+                "end": 722,
+                "entity_group": "organization",
+                "score": 0.9966103136539459,
+                "start": 718,
+                "word": "DRDC"
+            },
+            {
+                "end": 819,
+                "entity_group": "organization",
+                "score": 0.7307660281658173,
+                "start": 810,
+                "word": "Force AS"
+            },
+            {
+                "end": 1159,
+                "entity_group": "organization",
+                "score": 0.9965441425641378,
+                "start": 1155,
+                "word": "RDDC"
+            },
+            {
+                "end": 1165,
+                "entity_group": "organization",
+                "score": 0.992927074432373,
+                "start": 1161,
+                "word": "RDDC"
+            },
+            {
+                "end": 1186,
+                "entity_group": "organization",
+                "score": 0.7441000699996948,
+                "start": 1172,
+                "word": "défense Canada"
+            }
+        ]
+    },
+    "categories": [
+        "defence",
+        "environmental",
+        "legal",
+        "media"
+    ],
+    "summary": " The body of this CAN UNCLASSIFIED document does not contain the required security banners according to DND security standards. It must be treated as CAN UNCLASSIFIED and protected appropriately based on the terms and conditions specified on the covering page. The information contained in this publication has been derived and determined through best practice and adherence to the highest standards of responsible conduct of scientific research.  This report illustrates the use of the latest scientific evidence to assess the impact of using underwater and anthropogenic sound sources on marine life. Environment is a priority of the Department of National Defence (DND) and Defence Research and Development Canada (DRDC)  The Canadian Arctic Underwater Sentinel Experimentation (CAUSE) Project 99ab and the Force  ASW (Anti-submarine Warfare) project 01ca. This report evaluates the environmental  impact of transmitting underwater sounds on marine life. The French version of the abstract must be included here.  L’évaluation  du rendement  d’appareils  d'enregistrement  acoustique   at  l’aide de projecteurs acoustiques. The report was made by the RDDC (RDDC) for  défense Canada."
+}

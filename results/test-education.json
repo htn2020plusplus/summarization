@@ -1,0 +1,189 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 4,
+                "entity_group": "organization",
+                "score": 0.9861743152141571,
+                "start": 1,
+                "word": "CEA"
+            },
+            {
+                "end": 187,
+                "entity_group": "location",
+                "score": 0.9997341632843018,
+                "start": 181,
+                "word": "Canada"
+            },
+            {
+                "end": 275,
+                "entity_group": "location",
+                "score": 0.9996891021728516,
+                "start": 269,
+                "word": "Canada"
+            },
+            {
+                "end": 364,
+                "entity_group": "location",
+                "score": 0.9996678829193115,
+                "start": 358,
+                "word": "Canada"
+            },
+            {
+                "end": 527,
+                "entity_group": "location",
+                "score": 0.9991986751556396,
+                "start": 521,
+                "word": "Quebec"
+            },
+            {
+                "end": 718,
+                "entity_group": "location",
+                "score": 0.999463677406311,
+                "start": 712,
+                "word": "Quebec"
+            },
+            {
+                "end": 776,
+                "entity_group": "location",
+                "score": 0.9995788335800171,
+                "start": 770,
+                "word": "Quebec"
+            },
+            {
+                "end": 834,
+                "entity_group": "location",
+                "score": 0.9992262125015259,
+                "start": 827,
+                "word": "Alberta"
+            },
+            {
+                "end": 842,
+                "entity_group": "location",
+                "score": 0.9898035526275635,
+                "start": 836,
+                "word": "Saskat"
+            },
+            {
+                "end": 849,
+                "entity_group": "location",
+                "score": 0.8844141761461893,
+                "start": 843,
+                "word": "chewan"
+            },
+            {
+                "end": 861,
+                "entity_group": "location",
+                "score": 0.9993873238563538,
+                "start": 854,
+                "word": "Ontario"
+            },
+            {
+                "end": 974,
+                "entity_group": "organization",
+                "score": 0.9954741597175598,
+                "start": 957,
+                "word": "Statistics Canada"
+            },
+            {
+                "end": 1029,
+                "entity_group": "location",
+                "score": 0.9994663596153259,
+                "start": 1023,
+                "word": "Canada"
+            },
+            {
+                "end": 1437,
+                "entity_group": "location",
+                "score": 0.9994775056838989,
+                "start": 1431,
+                "word": "Canada"
+            },
+            {
+                "end": 1843,
+                "entity_group": "location",
+                "score": 0.9993990659713745,
+                "start": 1837,
+                "word": "Canada"
+            },
+            {
+                "end": 1873,
+                "entity_group": "organization",
+                "score": 0.9480669895807902,
+                "start": 1869,
+                "word": "OECD"
+            },
+            {
+                "end": 1967,
+                "entity_group": "location",
+                "score": 0.998913049697876,
+                "start": 1961,
+                "word": "Canada"
+            },
+            {
+                "end": 2024,
+                "entity_group": "location",
+                "score": 0.9983503818511963,
+                "start": 2017,
+                "word": "Alberta"
+            },
+            {
+                "end": 2042,
+                "entity_group": "location",
+                "score": 0.9945625066757202,
+                "start": 2034,
+                "word": "Columbia"
+            },
+            {
+                "end": 2053,
+                "entity_group": "location",
+                "score": 0.9976812601089478,
+                "start": 2047,
+                "word": "Quebec"
+            },
+            {
+                "end": 2328,
+                "entity_group": "location",
+                "score": 0.9986534118652344,
+                "start": 2322,
+                "word": "Canada"
+            },
+            {
+                "end": 2405,
+                "entity_group": "location",
+                "score": 0.8053418695926666,
+                "start": 2392,
+                "word": "United States"
+            },
+            {
+                "end": 2414,
+                "entity_group": "location",
+                "score": 0.9989013075828552,
+                "start": 2407,
+                "word": "Germany"
+            },
+            {
+                "end": 2425,
+                "entity_group": "location",
+                "score": 0.9990394115447998,
+                "start": 2419,
+                "word": "France"
+            }
+        ]
+    },
+    "categories": [
+        "defence",
+        "economy",
+        "education",
+        "energy",
+        "environmental",
+        "indigenous",
+        "infrastructure",
+        "legal",
+        "media",
+        "parliament",
+        "social development",
+        "transportation"
+    ],
+    "summary": " CEA survey captures Canadians’ satisfaction and confidence in public edu-cation systems. Education is exclusively withinthe jurisdiction of provincial and territorial governments. Canada remains only federat-ed nation that has nomeans for direct federal involvement.  Canada’s federal government funds themajority   of   First   Nations and Inuit students. Canada is a bilingual country and rec-ognizes French and English as its two offi-cial languages. More than 80% of French-speakingCanadians live in the province of Quebec.  A number of sections of the Canadian Charter of Rights and Freedoms guarantee Canadians’ right to access  services in both official languages. English-speaking students  living  in  Quebec and English-speak-ing students  in the province of Quebec are protected in the Charter. In the provinces of Alberta, Saskat-chewan and Ontario,  publicly  funded  Catholicschool  boards run  parallel to the publicsecular school systems.  Statistics Canada says there were 310,000 full-time  educators in Canada in 2004/05. The educator workforce is growing at a national level, but there are also significant regional differences. The challenge outlined in the 1996  Report of the RoyalCommission on Aboriginal Peoples was to undertake reforms of education systems.  There is com-pelling evidence that the realization of genuine communi-ty participation fosters renewal and success. Total per student funding in Canada amounted to $9,040 in 2004/05, an increase of 28% from $7,077 in 1998/99.  Reform agendas at the  provincial,  territorial  and  oftenschool  district level have centred on  gov-ernment commitments to greater account-ability and improved student achievement. Many provinces and territories have established some form of standardized,province-wide student achievement tests.  15-year-old students in Canada performed well above the OECD average in mathematics and reading. Four countries performed significantly better than Canada in both science and problem solving. Students in Alberta, British Columbia and Quebec performed as well as those from top performing coun-tries.  Large-scale monitoring efforts can help  us understand distribution of educational outcomes with-in and between schools, and how this is related to structur-al  features of the schooling  system. Students in Canada are more likely to complete high school than students from the United States, Germany and France, but less likely to do so than students in nine other industrialized countries.  The number of young women who graduate from high school is significantly higher than young men. Dropout rates are seven percentage pointslower in cities than in Canada’s smalltowns and rural villages. A disproportionate number of Canadian students living in poverty, youth with disabilities, and youth from visibleminority and Aboriginal communities experience disengagement from sec-ondary school.  The 2007 CEA Survey involved a repre-sentative3random sample of 2441 adults(18 years of  age  or over) with or without children currently enrolled in an elemen-tary  and/or secondary school. A responserate of 52% was obtained. The results of the 2007 OISE/UT survey may be found at:www.oise.ca/OISE-Survey.  The 2007 CEA survey revealed remarkably similar views across the country. Canadians in the Northwest Territories, Nunavut and Yukon were not polled because of our lack of resources to poll in languages other than English and French.  The Canadian Teachers’ Federation is pleased with the results of the 2007 CEA survey showing the high degree of sat-isfaction  Canadians have with teachers. Teaching was reported as the  fourth  most  trusted  profession of 23 professions.  There is strong public support (77%)  across the country for province-wide  high school graduationexams. A 2006 survey conducted by the Canadian Council on Learning also indicates support for large-scale  provincial,  national,  and  inter-national achievement  tests is strong among respondents.  Canadians in all regions are divided in their views on the success of educational changeover the past ten years. Canadians are more likely to react positively to new ideas for schools if there is evidence of their success in exper-iments (83%) or on a large  scale  in others schools (89%) Cana-dians also favour a balanced approach to educational change.  One third of Canadians feel their local schools  are  aver-age (a C grade) While 42%  gave their schools a B grade, only  6%  chose  A, which suggests there is  significant  room  for improvement.  In the absence of sound moral and research-based leadership, systems will continue to lurch from one reform initiative to another gaining the cynicism they  richly deserve. As a body of professionals, we educatorsneed to gain our voice and lead. 60% of Canadians  reporting in 2007 that they are  very or somewhat  satisfied with school systems.  Quebecers have the lowest level of satis-faction and the highest level of confidence in schools in the country. The results of the 2007 CEA survey indicate that Canadianshold remarkably similar  views about education. However, the views of Quebecresidents were different  from those in other parts of Canada.  Quebec respondents were the least likely to support increased  government spending on education or increased taxes foreducation. Quebec residents pay the highest taxes in Canadaand direct higher than average funding to education. Few (19%)Canadians have a lot  of  confidence  andrespect  in their provincial governmentswhen it comes to educational policy.  The public expresses the highest satisfaction with public education when they have direct experiences with local schools. Confidence in the education system as a whole is, however, a much  deeper concept.  The performance of our education systems is impor-tant  to us as a nation. Canadians express a strong desire  to have a greater  say in how schools are run. Four out of every ten (41%) Canadians also indicate that they are willing to serve on local school councils.  Support for public education remains high among Canadians, especially in comparison to other institutions. Public confidence in institutions is declining – perhaps a result of the greater propensity to question things that results from increased levels of education. A minority(38%)  of  Canadians  feel  public  fundingshould be extended to all private schools.  In 2002, B.C. had suffered from one billion dollars of educational services cut over a decade. The numbers werestaggering. As a parent, I was angry that my daughter would have less opportunity than I, a child of the 1970s. Over our three-year tenure, hundreds of millions of dollars were restored.  Three in ten  Canadians say they have seen minor (31%) or moderate (29%) changes to schools over the past ten years. A further two  in  ten  feel  changes  in schools  have been  major (20%) Canadians in all regions are largely divided on the scale and direction of provincial governments’ attempts to changes schools. Few Canadians rate provincial approaches to change as “about right,” and on either side are beliefsthat governments have introduced too many (33%) or too few (40%)  Opinion polls are apicture of what the “man or woman on the street’s think, Dr. Claire LAPOINTEDIRECTRICE says. In Quebec, the largest proportion of respondents in Canada thought that the changes introduced were going in the right direction (40%) while believing that the new approaches were not very successful (28%)  Alberta Commission on Education of Alberta released report on education of future. Education is the most important investment we can make as a society, the report says. Education will become more critical to individuals, their communities and the country as a whole, says the report.  Report: Canadians are in agreement that some change is needed, but not a lot. Report: Oureducational challenge is to create schoolsand school systems that achieve equalopportunity and good outcomes for allstu-dents. Canadians’ strong commitment to education and their desire to have agreater say in decision-making is an incred-ible asset in overcoming this challenge.  A strong and vibrant public education system is critical to devel-op social cohesion and the kind of civil soci-ety we need for the future. The results of this report are an impor-tant  snapshot of  Canadians’ current atti-tudes  toward public education.  The quality of education received by students in [Province]HIGHSCHOOLSimproved  a  great  deal,  improved  a little,  remained the same,  worsened a little. If the public schools in your community were graded in the same way, what grade would you give them?  317 Adelaide St. West, Suite 300, Toronto, Ontario M5V 1P9. 317, rue Adelaide Ouest, bureau 300Toronto (Ontario) M5v 1p9."
+}

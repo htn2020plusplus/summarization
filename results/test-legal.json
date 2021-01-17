@@ -1,0 +1,93 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 13,
+                "entity_group": "person",
+                "score": 0.9980569779872894,
+                "start": 1,
+                "word": "Timothy Lane"
+            },
+            {
+                "end": 21,
+                "entity_group": "location",
+                "score": 0.9995895624160767,
+                "start": 15,
+                "word": "Canada"
+            },
+            {
+                "end": 239,
+                "entity_group": "location",
+                "score": 0.988723635673523,
+                "start": 237,
+                "word": "US"
+            },
+            {
+                "end": 352,
+                "entity_group": "location",
+                "score": 0.9976693391799927,
+                "start": 350,
+                "word": "US"
+            },
+            {
+                "end": 597,
+                "entity_group": "location",
+                "score": 0.9997118413448334,
+                "start": 584,
+                "word": "United States"
+            },
+            {
+                "end": 1035,
+                "entity_group": "location",
+                "score": 0.9996240139007568,
+                "start": 1029,
+                "word": "Canada"
+            },
+            {
+                "end": 1282,
+                "entity_group": "location",
+                "score": 0.9996349215507507,
+                "start": 1276,
+                "word": "Canada"
+            },
+            {
+                "end": 1376,
+                "entity_group": "location",
+                "score": 0.9996322393417358,
+                "start": 1370,
+                "word": "Canada"
+            },
+            {
+                "end": 1699,
+                "entity_group": "organization",
+                "score": 0.9974280198415121,
+                "start": 1685,
+                "word": "Bank of Canada"
+            },
+            {
+                "end": 1836,
+                "entity_group": "location",
+                "score": 0.9995153546333313,
+                "start": 1830,
+                "word": "Canada"
+            }
+        ]
+    },
+    "categories": [
+        "agriculture",
+        "defence",
+        "economy",
+        "education",
+        "energy",
+        "environmental",
+        "healthcare",
+        "indigenous",
+        "infrastructure",
+        "media",
+        "parliament",
+        "social development",
+        "technology",
+        "transportation"
+    ],
+    "summary": " Timothy Lane: Canada’s continuing economic expansion has brought the Canadian economy close to its full potential. The Canadian economy is progressing well. 2017 was a year of robust economic growth—3 per cent for the year as a whole.  US economic growth remained robust, at an annual pace of 2.5 per cent during the fourth quarter of 2017, and the US economy is essentially at full employment, with the jobless 3 rate at a 17-year low. Market expectations about the path for inflation in some major advanced economies have been shifting upward. Over time, rising bond yields in the United States can be expected to put upward pressure on yields elsewhere.  The rise in volatility came after a long period of exceptional calm in global financial markets. The volatility-suppressing effects of monetary policy are diminishing and more normal levels of volatility are returning to markets. But the global outlook remains subject to considerable uncertainty, notably around geopolitical developments and increasing protectionism.  Canada is not seeing the full benefit of oil’s recovery because of wider-than-average differences between benchmark global oil prices and prices for Canadian heavy oil. US tax reforms may further reduce the relative attractiveness of investing in Canada. Non-energy goods exports could disappoint, given ongoing competitiveness challenges.  Canada has made considerable progress in job creation over the past year, notably with strong gains in full-time employment. The jobless rate is consequently near a historically low level (Chart 5) Wage growth has firmed, although it remains slower than would be typical in an economy with no labour market slack.  Bank of Canada holds its policy rate at 1.25 per cent. Bank's core measures of inflation are also edging up, as we expected. Still, inflation in Canada will be influenced this year by temporary factors related to gasoline, electricity and minimum wages. Inflation is expected to climb back to around 2 per cent in the coming months.  Last summer, we increased our policy interest rate three times, for a total of 75 basis points. In these moves, we’ve been balancing the risk of undermining the economic expansion by moving too quickly and raising rates sharply later to rein in inflation. Despite strong employment gains and an economy operating close to capacity, wage growth has been slower than would be expected."
+}

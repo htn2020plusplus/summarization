@@ -1,0 +1,19 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 770,
+                "entity_group": "organization",
+                "score": 0.9970460534095764,
+                "start": 753,
+                "word": "Statistics Canada"
+            }
+        ]
+    },
+    "categories": [
+        "economy",
+        "media",
+        "social development"
+    ],
+    "summary": " Almost one in seven Canadians report food insecurity in the past 30 days. The COVID-19 pandemic has brought major changes to the financial stability of Canadians, with extensive job loss and reduced hours of work.  Most Canadians reported only one negative experience, but 2.0% reported the most severe food insecurity, with five or all six experiences reported. The web panel results found that there was a higher rate of food insecurity being reported among Canadians living in a household with children.  The rate of food insecurity for those who were not employed during the reference week was in between these two rates at 16.8%. The pandemic continues to have a significant impact on the health, finances and social activities of many Canadians. Statistics Canada will continue to monitor the impacts of COVID-19 on Canadians."
+}

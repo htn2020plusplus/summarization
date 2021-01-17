@@ -1,0 +1,192 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 123,
+                "entity_group": "organization",
+                "score": 0.9928318977355957,
+                "start": 104,
+                "word": "Environics Research"
+            },
+            {
+                "end": 200,
+                "entity_group": "organization",
+                "score": 0.997536165373666,
+                "start": 141,
+                "word": "Canadian Radio - television and Telecommunications Commission"
+            },
+            {
+                "end": 210,
+                "entity_group": "organization",
+                "score": 0.9995208084583282,
+                "start": 206,
+                "word": "CRTC"
+            },
+            {
+                "end": 289,
+                "entity_group": "organization",
+                "score": 0.9994034965833029,
+                "start": 274,
+                "word": "Northwestel Inc"
+            },
+            {
+                "end": 345,
+                "entity_group": "location",
+                "score": 0.9956538081169128,
+                "start": 339,
+                "word": "Canada"
+            },
+            {
+                "end": 353,
+                "entity_group": "location",
+                "score": 0.9872685670852661,
+                "start": 348,
+                "word": "North"
+            },
+            {
+                "end": 572,
+                "entity_group": "organization",
+                "score": 0.9992357492446899,
+                "start": 568,
+                "word": "CRTC"
+            },
+            {
+                "end": 631,
+                "entity_group": "location",
+                "score": 0.9616594910621643,
+                "start": 625,
+                "word": "Canada"
+            },
+            {
+                "end": 639,
+                "entity_group": "location",
+                "score": 0.9487662315368652,
+                "start": 634,
+                "word": "North"
+            },
+            {
+                "end": 662,
+                "entity_group": "organization",
+                "score": 0.9984550774097443,
+                "start": 651,
+                "word": "Northwestel"
+            },
+            {
+                "end": 704,
+                "entity_group": "location",
+                "score": 0.9989000558853149,
+                "start": 699,
+                "word": "Yukon"
+            },
+            {
+                "end": 731,
+                "entity_group": "location",
+                "score": 0.9979099929332733,
+                "start": 710,
+                "word": "Northwest Territories"
+            },
+            {
+                "end": 744,
+                "entity_group": "location",
+                "score": 0.9964006841182709,
+                "start": 737,
+                "word": "Nunavut"
+            },
+            {
+                "end": 782,
+                "entity_group": "location",
+                "score": 0.9991500675678253,
+                "start": 766,
+                "word": "British Columbia"
+            },
+            {
+                "end": 802,
+                "entity_group": "location",
+                "score": 0.9948000609874725,
+                "start": 787,
+                "word": "Fort Fitzgerald"
+            },
+            {
+                "end": 811,
+                "entity_group": "location",
+                "score": 0.9994981288909912,
+                "start": 804,
+                "word": "Alberta"
+            },
+            {
+                "end": 818,
+                "entity_group": "organization",
+                "score": 0.99714395403862,
+                "start": 814,
+                "word": "CRTC"
+            },
+            {
+                "end": 853,
+                "entity_group": "organization",
+                "score": 0.9986751675605774,
+                "start": 842,
+                "word": "Northwestel"
+            },
+            {
+                "end": 1063,
+                "entity_group": "organization",
+                "score": 0.9406324625015259,
+                "start": 1059,
+                "word": "CRTC"
+            },
+            {
+                "end": 1148,
+                "entity_group": "organization",
+                "score": 0.9985815286636353,
+                "start": 1144,
+                "word": "CRTC"
+            },
+            {
+                "end": 1179,
+                "entity_group": "location",
+                "score": 0.9981657266616821,
+                "start": 1174,
+                "word": "Yukon"
+            },
+            {
+                "end": 1202,
+                "entity_group": "location",
+                "score": 0.9957450926303864,
+                "start": 1181,
+                "word": "Northwest Territories"
+            },
+            {
+                "end": 1214,
+                "entity_group": "location",
+                "score": 0.9877887666225433,
+                "start": 1207,
+                "word": "Nunavut"
+            },
+            {
+                "end": 1304,
+                "entity_group": "organization",
+                "score": 0.9988370835781097,
+                "start": 1293,
+                "word": "Northwestel"
+            },
+            {
+                "end": 1397,
+                "entity_group": "location",
+                "score": 0.9916460514068604,
+                "start": 1392,
+                "word": "North"
+            }
+        ]
+    },
+    "categories": [
+        "defence",
+        "economy",
+        "indigenous",
+        "infrastructure",
+        "legal",
+        "media",
+        "social development",
+        "technology"
+    ],
+    "summary": " Public opinion research report presents the results of omnibus questions and focus groups conducted by Environics Research on behalf of the Canadian Radio-television and Telecommunications Commission. The CRTC launched a consultation to review its regulatory framework for Northwestel Inc. and the state of telecommunications services in Canada’s North. The research study was conducted between September and October 2020.  The 2020 edition of the survey included six questions about telecommunication services and three questions about broadcasting services for the CRTC. For the purposes of this public opinion research, “Canada's North” refers to Northwestel’s serving territory, which includes Yukon, the Northwest Territories, and Nunavut, as well as northern British Columbia and Fort Fitzgerald, Alberta.  CRTC research confirms that Northwestel is the main provider of home Internet service for Northerners. The main sources of local news and information are the Internet/social media (37%) and radio (30%), well ahead of TV and newspapers (30%) The CRTC Research on Telecommunications Services in Northern Canada was conducted by the CRTC.  The main limitation in Yukon, Northwest Territories and Nunavut is the lack of cell service outside town  or city limits. Participants viewed Northwestel’s dominance as “monopolistic” and expressed a desire for more competitors to enter the North in hopes it would lower prices."
+}

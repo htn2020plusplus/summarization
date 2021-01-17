@@ -1,0 +1,78 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 65,
+                "entity_group": "location",
+                "score": 0.9984015822410583,
+                "start": 59,
+                "word": "Canada"
+            },
+            {
+                "end": 552,
+                "entity_group": "location",
+                "score": 0.9994736313819885,
+                "start": 546,
+                "word": "Canada"
+            },
+            {
+                "end": 600,
+                "entity_group": "location",
+                "score": 0.9994831681251526,
+                "start": 594,
+                "word": "Canada"
+            },
+            {
+                "end": 685,
+                "entity_group": "location",
+                "score": 0.9994919300079346,
+                "start": 679,
+                "word": "Canada"
+            },
+            {
+                "end": 735,
+                "entity_group": "location",
+                "score": 0.9995385408401489,
+                "start": 729,
+                "word": "Canada"
+            },
+            {
+                "end": 1616,
+                "entity_group": "organization",
+                "score": 0.8923869729042053,
+                "start": 1613,
+                "word": "NHS"
+            },
+            {
+                "end": 2248,
+                "entity_group": "location",
+                "score": 0.9984437823295593,
+                "start": 2242,
+                "word": "Canada"
+            },
+            {
+                "end": 2363,
+                "entity_group": "location",
+                "score": 0.99808269739151,
+                "start": 2357,
+                "word": "Canada"
+            }
+        ]
+    },
+    "categories": [
+        "defence",
+        "economy",
+        "education",
+        "energy",
+        "environmental",
+        "healthcare",
+        "indigenous",
+        "infrastructure",
+        "legal",
+        "media",
+        "parliament",
+        "social development",
+        "technology"
+    ],
+    "summary": " The Old Age Security (OAS) program is the first pillar of Canada’s retirement income system, providing a basic pension to nearly all seniors, and a supplement to low-income seniors. This paper examines the take-up of OAS benefits, among those who are eligible, and the financial situation of beneficiaries of the Allowances.  In July 2015, the OAS pension provided benefits to 5.6 million seniors with the full basic pension amounting to $564.87 per month (or about $6,800 per year) Eligibility for the pension is based on years of residence in Canada. In order to qualify, a person living in Canada at the time of application must be 65 years or older.  Seniors living outside Canada need a minimum of 20 years of residence in Canada after age 18 to receive the OAS pension outside the country. In July 2015, the GIS was paid to 1.7 million low-income seniors and could reach $765.93 per month for single seniors. Benefits are completely repaid when income reaches $118,055.  GIS benefits are suspended after six months outside the country. GIS and Allowance benefits are determined using net income. Eligibility for the Allowances is also based on family income. Benefits paid under the OAS program are adjusted quarterly.  Since April 2013, an automatic enrolment process has been introduced, eliminating the need for many seniors to apply for the OAS pension. Budget 2016 announced an increase to the GIS top-up of single seniors, effective in July 2016. The National Household Survey (NHS) is a voluntary survey, introduced as a replacement for the long-form census questionnaire. The response rate for the NHS was 68.6% (over 3 million households responded to the survey).  Non-permanent residents such as refugee claimants, holders of work or study permits, and members of their families living with them were excluded from the sample. The survey also excludes persons living in institutional collective dwellings such as hospitals, nursing homes and penitentiaries; Canadian citizens living in other countries.  EI and QPIP contributions do not include contributions for self-employment income. GIS and Allowances benefits from July 2009 to June 2010 are based on income in 2008. EI contributions to social security programs outside Canada are not available in the data.  In reality, the amount of the OAS pension is based on years of residence in Canada (after reaching 18 years of age) when the pension begins. In July 2015, fewer than 2% of OAS beneficiaries were benefiting from an international social security agreement. The main contribution of this paper is to show take-up rates for different sub-groups of the population.  The number of people receiving the OAS pension is underestimated in the NHS (compared to OAS administrative data) The NHS does not include people living in nursing homes and hospitals, while the Census includes these people. The NHS also allows examining subgroups that are not identifiable in the LAD (e.g. Aboriginals)  The OAS Recovery Tax is considered a tax measure. The take-up rate of the OAS pension among eligible seniors was 96.9% in 2010. Table 3A compares take-ups for different groups and indicates if differences in take up are statistically significant. Table 2 – Household income distribution of seniors ineligible for OAS Pension.  Take-up of the OAS pension estimated in this paper is similar to the take-up estimate for tax-filers using LAD data. Table 3A – OAS Pension Take-Up by Group (2010) Table 3B shows that OAS pensions take-ups reached 99.5% for individuals with income below $50,000 and reached almost 99% for those with income between $50k and $75k. Overall, take up was 99%  for people with incomes below $108,214 but was much lower for higher-income earners.  Table 3B – OAS Pension Take-up by Group (2010) OAS pension take-up (%) Confidence interval (95%) Weight of group in OAS eligible population. Table shows that differences in take-ups are statistically significant when comparing two sub-groups (e.g. women)  The take-up rate of the GIS among eligible seniors was 89.1% in 2010; however almost all (99.4%) GIS-eligible seniors received the OAS pension. Take-up rates were 85% for 65 to 69 year old seniors, 90% for 70 to 79 year olds and 92% for seniors over 85. GIS take-ups were higher for women, single seniors, senior immigrants and older seniors.  Table 4B shows that GIS take-up decreases with income, reaching more effectively seniors who need it more. GIS takes-up was 96% for those with less than $10,000 in family income from sources other than the OAS program (the income used to assess eligibility for the GIS) 96.0** indicates that differences in take-ups are statistically significant (with 95% confidence)  GIS take-up was higher among those living in subsidized dwellings and those with no diploma of any kind. Service Canada has been reaching out to seniors to ensure they are aware of the GIS and that eligible seniors apply for it.  GIS take-up was 3 to 5 percentage points higher in Newfoundland, New Brunswick and Quebec (3 of the 4 provinces where seniors have the lowest average income) Take-up rates were not significantly different for Aboriginals (both living on or off a reserve) and for people who often reduce their activities due to a condition or health problem.  Allowances take-up rate was 78% for those with $10,000 to $15,000 in income from other sources. People with less than a high school diploma had a higher take up rate than those with an apprenticeship, college, Masters or Doctorate diploma. To receive the Allowances in 2010, widows needed their other sources of income to be below $21,768.  There is a significant vulnerable population among 60-64 year olds. Over 85% of Allowances recipients have individual income below $25,000. Allowances benefits amounted to $5,600 and represented almost 50% of individual income. Among widows, spouses of seniors and beneficiaries of the Allowances, these benefits represented 20% of household income.  Allowances benefits received in 2010 are based on income in 2008 and 2009. For 2010 benefits, the family income threshold was $29,904 for married or common-law couples and $21,768 for widows. Recipients of the Allowances were 85% female and had lower levels of education on average than other 60-64 year-olds.  The Allowances are aimed at two distinct groups of 60-64 year olds: widows and spouses of seniors (over 65 years old) There is a significant vulnerable population among both of these groups. Table 6C shows that the prevalence is higher among widows or of other singles.  2011 National Household Survey (sample of 407,995 people aged 60-64 years old) Among Allowance recipients, many widows and spouses of seniors are financially vulnerable, and the Allowances make a significant contribution helping recipients financially. About 47% of recipients of the Allowance for the Survivor, on average, lived in households with almost 35% of their individual income.  Allowance for the Survivor recipients had diverse sources of income. 60% lived in households with income below $25,000. Almost 80% of them had income from the CPP or QPP and 20% had a private pension plan. Almost 90% of Allowance beneficiaries have individual income below the LIM.  Take-up rates of the Allowances also decrease with income, with higher take-up among seniors who need it most. There is a significant vulnerable population among 60-64 year olds, in particular, among widows or widowers and spouses of seniors.  On average, Allowances benefits amounted to $5,600 and represented almost 50% of individual income. Over 85% of Allowances recipients have individual income below $25,000, with a mean income of $16,000. Recipients of the Allowances were 85% female and had lower levels of education than other 60-64 year-olds."
+}

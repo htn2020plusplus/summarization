@@ -32,7 +32,7 @@ async function parseNamedEntities(f, ne_set, named_entities) {
 
     for (var i = 0; i < ents.length; i++) {
         const ent = ents[i]
-        if (!ne_set.has(ent.word)) {
+        if (!ne_set.has(ent.word) && !ent.word.startsWith("##")) {
             console.log(ent.word, ent.entity_group)
             const desc = await wikiLookup(ent.word, ent.entity_group)
             const d = {
@@ -63,7 +63,7 @@ async function parseResults(results) {
 // categories
 function syncCategories() {
     const reqs = categories.map(category => {
-        const query = gql`
+        const mutate = gql`
         mutation CreateCategory($name: String!, $description: String!) {
             createCategory(data: { title: $name, description: $description }) {
                 title
@@ -72,79 +72,103 @@ function syncCategories() {
         }
         `
 
-        return request('http://localhost:3000/', query, category)
+        return request('http://localhost:3000/', mutate, category)
     })
 
-    Promise.all(reqs).then(console.log)
+    return Promise.all(reqs).then(console.log)
 }
-syncCategories().then(() => {
-    // name entities
-    const results = fs.readdirSync('./results').map(d => d.split(".")[0])
-    parseResults(results).then(entities => {
-        const reqs = entities.map(entity => {
-            entity.categories = []
-            const query = gql`
-            mutation CreateNamedEntity($entity: String!, $group: String!, $description: String!, $categories: [String!]!) {
-                createNamedEntity(data: { name: $entity, type: $group, description: $description, categories: $categories }) {
-                    name
-                    type
-                    categories {
+syncCategories()
+
+
+// name entities
+const results = fs.readdirSync('./results').map(d => d.split(".")[0])
+parseResults(results).then(entities => {
+    const reqs = entities.map(entity => {
+        entity.categories = []
+        const mutate = gql`
+        mutation CreateNamedEntity($entity: String!, $group: String!, $description: String!, $categories: [String!]!) {
+            createNamedEntity(data: { name: $entity, type: $group, description: $description, categories: $categories }) {
+                name
+                type
+                categories {
+                    id
+                }
+                description
+            }
+        }
+        `
+
+        return request('http://localhost:3000/', mutate, entity)
+    })
+
+    Promise.all(reqs).then(console.log).then(async () => {
+        // index computation
+        console.log('============')
+        var ne_set = new Set()
+        entities.forEach(ent => ne_set.add(ent.entity))
+        ne_set = Array.from(ne_set)
+        const longest_entity = Math.max(...(ne_set.map(el => el.length)))
+
+        const cumulative = {}
+        for (var i = 0; i < results.length; i++) {
+            const f = results[i]
+            const obj = JSON.parse(fs.readFileSync(`./results/${f}.json`, 'utf8'));
+
+            const indices = []
+            for (var j = 0; j < obj.summary.length - longest_entity; j++) {
+                ne_set.forEach(ne => {
+                    if (obj.summary.substring(j, j + ne.length) == ne) {
+                        indices.push({
+                            startPosition: j,
+                            endPosition: j + ne.length,
+                            entity: ne,
+                        })
+                    }
+                })
+            }
+
+            cumulative[f] = indices
+        }
+
+        // TODO: optimize to generate maximally large batches that have no
+        // overlapping entities
+        // currently just does one at a time which is,,, really friggin slow
+        const flattened = Object.keys(cumulative).reduce((acc, cur) => {
+            acc.push(...cumulative[cur])
+            return acc
+        }, [])
+
+        for (var i = 0; i < flattened.length; i++) {
+            const findQuery = gql`
+                query SearchIdxbyId($name: String!) {
+                    searchEntity(entity: $name) {
                         id
                     }
-                    description
                 }
-            }
-            `
+                `
 
-            return request('http://localhost:3000/', query, entity)
-        })
+            const idx = flattened[i]
+            const r = await request('http://localhost:3000/', findQuery, { name: idx.entity }).then(d => {
+                const formal_id = d.searchEntity.id
+                idx.entity = formal_id
 
-        Promise.all(reqs).then(console.log).then(() => {
-            // index computation
-            console.log('============')
-            var ne_set = new Set()
-            entities.forEach(ent => ne_set.add(ent.entity))
-            ne_set = Array.from(ne_set)
-            const longest_entity = Math.max(...(ne_set.map(el => el.length)))
-
-            const cumulative = {}
-            for (var i = 0; i < results.length; i++) {
-                const f = results[i]
-                const obj = JSON.parse(fs.readFileSync(`./results/${f}.json`, 'utf8'));
-
-                const indices = []
-                for (var j = 0; j < obj.summary.length - longest_entity; j++) {
-                    ne_set.forEach(ne => {
-                        if (obj.summary.substring(j, j + ne.length) == ne) {
-                            indices.push({
-                                startPosition: j,
-                                endPosition: j + ne.length,
-                                entity: ne,
-                            })
+                const mutate = gql`
+                    mutation CreateIndex($entity: String!, $startPosition: Float!, $endPosition: Float!) {
+                        createIndex(data: { entity: $entity, startPosition: $startPosition, endPosition: $endPosition}) {
+                            entity {
+                                id
+                            }
+                            startPosition
+                            endPosition
                         }
-                    })
-                }
+                    }
+                    `
 
-                cumulative[f] = indices
-            }
+                return request('http://localhost:3000/', mutate, idx)
+            })
 
-            const flattened = Object.keys(cumulative).reduce((acc, cur) => {
-                acc.push(...cumulative[cur])
-                return acc
-            }, [])
-
-            const query = gql`
-            mutation CreateIndex($entity: String!, $startPosition: String!, $endPosition: String!) {
-                createIndex(data: { entity: $entity, startPosition: $startPosition, endPosition: $endPosition}) {
-                    entity
-                    startPosition
-                    endPosition
-                }
-            }
-            `
-
-            return request('http://localhost:3000/', query, flattened)
-        })
-
+            console.log(`progress: ${i+1}/${flattened.length}`)
+        }
     })
+
 })

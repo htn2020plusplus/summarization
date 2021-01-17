@@ -1,0 +1,61 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 1069,
+                "entity_group": "organization",
+                "score": 0.9169626981019974,
+                "start": 1054,
+                "word": "Coastal GasLink"
+            },
+            {
+                "end": 1641,
+                "entity_group": "location",
+                "score": 0.8722536365191141,
+                "start": 1633,
+                "word": "Kootenay"
+            },
+            {
+                "end": 1751,
+                "entity_group": "location",
+                "score": 0.8481505513191223,
+                "start": 1742,
+                "word": "Southwest"
+            },
+            {
+                "end": 1913,
+                "entity_group": "location",
+                "score": 0.8598301708698273,
+                "start": 1897,
+                "word": "Vancouver Island"
+            },
+            {
+                "end": 1923,
+                "entity_group": "location",
+                "score": 0.809282660484314,
+                "start": 1918,
+                "word": "Coast"
+            },
+            {
+                "end": 2194,
+                "entity_group": "organization",
+                "score": 0.7178810834884644,
+                "start": 2189,
+                "word": "Adams"
+            },
+            {
+                "end": 2199,
+                "entity_group": "location",
+                "score": 0.8000261187553406,
+                "start": 2195,
+                "word": "Lake"
+            }
+        ]
+    },
+    "categories": [
+        "economy",
+        "infrastructure",
+        "transportation"
+    ],
+    "summary": " The province’s labour market continues to recover from the impact of the initial outbreak of the novel coronavirus (COVID-19), as employment increased (+33,500) in October. Employment growth was due to a surge in the private sector (+40,500), whereas employment declined in the public sector (-5,000) and among the self-employed (-1,900) The province's unemployment rate improved  slightly, decreasing by 0.4 percentage points to 8.0% over the month.  The COVID-19 pandemic continued to weigh on employment for B.C. youth (15 to 24 years) in October, though their unemployment rate improved slightly by 0.3 percentage points to 15.6%. The number of unemployed  youth remained relatively unchanged, whereas those employed increased by 5,000. Those unemployed  aged 25 years and older decreased by 8,600 over the month to reach an unemployment rate of 6.8%.  The lingering impacts of the pandemic continue to hamper residential construction across the province. Housing starts are down 22.5% year-over-year, but construction  continues to progress on the Coastal GasLink project. B.C.’s services sector employment decreased to 2,007,500, largely due in part to significant job losses in trade and accommodation and food services.  More people in the food service industry were able to find work, as bars, restaurants and breweries continued to benefit from the temporary expansion of service areas. The temporary patio extension across the province is extended until October 31, 2021. The impact of the COVID-19 pandemic pandemic continues to be widespread, and almost all the regions continue to be lower on a month-to-month basis.  Kootenay region saw employment grow (+4.0%) in October compared to the same time last year. Lower Mainland - Southwest employment decreased by 6.0% to 1,563,700,31 and is currently experiencing a surge in COVID-19 cases. Employment decreased by 1.6% to 385,500 in Vancouver Island and Coast, while unemployment increased to 8.3% between October of 2019 and October 2020.  In the past year, employment in Thompson-Okanagan decreased by 4.1% to 270,300 and the unemployment rate increased to 8.1%. The region’s labour market continues to recover, already as Adams Lake First Nation has a few construction projects underway. The outlook for the construction sector is improving, as construction  has begun on a bulk  water and  sewage facility.  Labour Market Bulletin – British Columbia – October 2020. Statistics Canada. November 6, 2020 https://www.statcan.ca/t1/tbl1/en/tv.action?pid=3410015601. Table: Employment by industry, monthly, seasonally adjusted and unadjusted, and trend-cycle, last 5 months (x 1,000) Table: Building permits, by type of structure and type of work.  GVHA hopeful for 2021 cruise ship season as ban extended, CTV News online, October 29, 2020. Statistics Canada: Labour force characteristics by economic region, three-month moving average, unadjusted for seasonality, last 5 months.  K-J Millar, Flights to resume to Haida Gwaii, Haidagwaii Observer online, October 5, 2020. Tom Fletcher, Site C actions, costs won’t be known until after B.C. election, Horgan says."
+}

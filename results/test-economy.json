@@ -1,0 +1,73 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 21,
+                "entity_group": "location",
+                "score": 0.9989362955093384,
+                "start": 15,
+                "word": "Canada"
+            },
+            {
+                "end": 66,
+                "entity_group": "location",
+                "score": 0.9994917511940002,
+                "start": 60,
+                "word": "Canada"
+            },
+            {
+                "end": 199,
+                "entity_group": "location",
+                "score": 0.9985448122024536,
+                "start": 193,
+                "word": "Canada"
+            },
+            {
+                "end": 208,
+                "entity_group": "location",
+                "score": 0.9989968538284302,
+                "start": 202,
+                "word": "Canada"
+            },
+            {
+                "end": 803,
+                "entity_group": "location",
+                "score": 0.999411940574646,
+                "start": 797,
+                "word": "Canada"
+            },
+            {
+                "end": 1353,
+                "entity_group": "organization",
+                "score": 0.9936391370637077,
+                "start": 1335,
+                "word": "McKinsey & Company"
+            },
+            {
+                "end": 2512,
+                "entity_group": "location",
+                "score": 0.9977383613586426,
+                "start": 2506,
+                "word": "Canada"
+            }
+        ]
+    },
+    "categories": [
+        "agriculture",
+        "defence",
+        "economy",
+        "education",
+        "energy",
+        "environmental",
+        "healthcare",
+        "indigenous",
+        "infrastructure",
+        "legal",
+        "media",
+        "parliament",
+        "social development",
+        "technology",
+        "transportation"
+    ],
+    "summary": " A Report from Canada’s Economic Economic  Strategy Tables. Canada's moment is now. We need to raise our level of ambition to aspire to “own the podium” on a global scale. The world needs more Canada.  Canada’s Economic Strategy Tables is to create the conditions for strong, sustained, long-term economic growth that will secure Canadians’ quality of life. Like other G7 countries, our annual GDP growth has slowed, and this downward trend seems to be accelerating. We need to give our economy a jolt by increasing our competitiveness.  Every Canadian, regardless of geography or demo-graphics, needs to participate in the digital economy. We need to establish a modern regulatory system that fosters innovation and adoption by focusing on outcomes, not pre-scriptions. By fully including women, Canada could add  $150 billion in incremental GDP by 2026 or see a 0.6% annual GDP growth.  Government procurement can be used to accelerate adoption of Canadian innovation, drive solutions to big challenges and send powerful signals in the marketplace. Efforts must be balanced between championing Canadian firms and attract-ing foreign direct investment. Clustering creates net-work effects that include sharing best practices, peer “nudging” and establishing demand for goods and services that are more technologically sophisticated.  McKinsey & Company provided fact-based research and analysis to support the development of the Economic Strategy Tables’ signature recom-mendations presented in this report.  Many promising, innovative Canadian companies with potential to become major players or even anchor firms are acquired at an early stage in their evolution. We need more high-growth firms to secure our future and drive job creation, innovation and growth. Success depends on significant private-sector leadership, investment and involvement.  High-growth firms would have priority access to the full portfolio of existing business support programs and a simplified application process enabled by data sharing between programs. Smaller firms would be expected to have a higher growth threshold than mid-sized companies. Firms should also have access  to the Accelerated Growth Service.  Own the Podium, a competitive tax framework and underlying policy conditions to scale-up are needed. Lack of advice is the biggest obstacle to international growth faced by Canadian exporters. Complex regulatory system is one of the top reasons foreign investors are no longer investing in Canadian projects.  Canada ranks 34th out of 35 OECD countries in the average time to receive project construction approval. The pace of the current regulatory system is not designed to keep up with the rapidly changing global environment. We need a charter on regulatory agility laying the foundation for a new approach.  Innovative and Competitive Regulations Council would comprise industry and subject-matter experts at both federal and provincial levels for each of the key economic sectors. Council would report to First Ministers  on a regular basis with a commitment to be  discussed at upcoming First Ministers’ meetings.  Canada is a highly innovative country with a strong research base and thriving communities of technology start-ups. However, we don’t have enough people with the skills and experience needed to scale up businesses. Talent is the most powerful resource for driving competitiveness and enabling inclusive growth.  All Tables indi-cated that the kindergarten to Grade 12 education system needs to evolve in order to increase aware-ness of opportunities available in a range of fields and careers. Curricula need to be adapted to help students develop more compu-tational, trades-oriented and entrepreneurial skills. We need to ensure that all Canadians, wherever they live, have access to the same educational opportunities throughout K-12.  Canada needs to up its game and put a full-court press on global talent attraction and retention. Strong coordination among the six skill hubs and links to current initiatives will be essential. The Tables propose a digital education platform to support this learning so that Canadians can access online courses.  Canada needs Technology Adoption Centres that connect innovators and adopters and de-risk key sectoral challenges. Federal skills and talent programs should be consoli-dated and streamlined to improve access and use.  Canada is a relatively small market for technology developers, with limited opportunities to prove new products in the market-place and scale businesses domestically before they start exporting. Small and medium enterprises account for 50% of jobs, but only 30% of exports due to the lack of a Canadian globally competitive ecosystem.  The U.S. allows a 100% depreciation deduction in the first year for investments in equipment, until 2023. Sev-eral Tables made specific recommendations regarding accelerated capital cost allowance. The government should refocus to support more high-performing scale-ups.  Canada’s size is a blessing but can put us at a disadvantage compared to smaller countries when it comes to digital connectivity. The 2016 Canadian Infrastructure Report Card found 10% to 20% of the country's physical infrastructure assets are in poor or very poor condition. The World Economic Forum's Global Competitiveness Report recognizes infrastructure as a key pillar that contributes to a nation's competitiveness.  By 2025, Canada needs to establish a digital infrastructure system that will provide 100% universal, affordable, next-generation Internet access to all Canadians. We need to establish data libraries that pool large quantities of anonymized data so innovators can draw on them to develop machine learning or other data analytics solutions. Every government service needs to be delivered online to eliminate the need for in-person visits.  Canada has a strong international reputation based on our values and identity, but our country’s brand needs a refresh. A strong brand ensures competitive advantages in everything from tourism and business investment to the sale of goods and services. A well-established Canadian economic brand will increase the profile of the six key economic sectors, attract investors, brand products for export markets.  Export Development Canada identifies six international perceptions from around the globe that “Let’s contribute to a success in which everyone can participate” The brand should be developed through a government/industry partnership.  The Innovation Union Scoreboard 2017 ranks Sweden as the leading European Union country for innovation. Sweden is one of Europe’s top-three spenders in  this area, investing 3.3% of GDP in R&D in 2015.  Table members will need support as they work together and as industry works with government and other partners to implement the growth strategies set out here. Table members need to build interconnectivity between sectors, including the support of timely data."
+}
