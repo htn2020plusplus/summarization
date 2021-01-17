@@ -34,7 +34,7 @@ def summarizeReq():
     print(f"got summarization request of length {len(text)}")
 
     if len(text) < 10:
-        return
+        return "too short", 400
 
     answer = summarizer(text, max_length=150, min_length=15, do_sample=False)
 
@@ -72,6 +72,10 @@ def categorize():
     text = data['text']
     print(f"got categorization request of length {len(text)}")
 
+
+    if len(text) < 10:
+        return "too short", 400
+
     res = classifier(text, categories, multi_class=True)
     res_proc = dict((key, value) for key, value in zip(res['labels'], res['scores']))
 
@@ -82,6 +86,9 @@ def nerReq():
     data = flask.request.form  # is a dictionary
     text = data['text']
     print(f"got ner request of length {len(text)}")
+
+    if len(text) < 10:
+        return "too short", 400
 
     # tokens = ner_tokenizer.tokenize(
     #     ner_tokenizer.decode(ner_tokenizer.encode(text)))

@@ -1,0 +1,72 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 62,
+                "entity_group": "organization",
+                "score": 0.9987263878186544,
+                "start": 45,
+                "word": "BC Public Service"
+            },
+            {
+                "end": 136,
+                "entity_group": "organization",
+                "score": 0.9493801395098368,
+                "start": 132,
+                "word": "MyHR"
+            },
+            {
+                "end": 817,
+                "entity_group": "organization",
+                "score": 0.8266711235046387,
+                "start": 811,
+                "word": "Health"
+            },
+            {
+                "end": 1256,
+                "entity_group": "organization",
+                "score": 0.9989520758390427,
+                "start": 1232,
+                "word": "BC Public Service Agency"
+            },
+            {
+                "end": 1326,
+                "entity_group": "organization",
+                "score": 0.7267587979634603,
+                "start": 1301,
+                "word": "Provincial Health Officer"
+            },
+            {
+                "end": 1341,
+                "entity_group": "organization",
+                "score": 0.9809323430061341,
+                "start": 1331,
+                "word": "WorkSafeBC"
+            },
+            {
+                "end": 2238,
+                "entity_group": "organization",
+                "score": 0.872147798538208,
+                "start": 2228,
+                "word": "Provincial"
+            }
+        ]
+    },
+    "categories": [
+        "defence",
+        "economy",
+        "education",
+        "energy",
+        "environmental",
+        "healthcare",
+        "indigenous",
+        "infrastructure",
+        "legal",
+        "media",
+        "parliament",
+        "social development",
+        "technology",
+        "transportation"
+    ],
+    "summary": " The most current information related to the BC Public Service’s response to COVID-19 (including this document) is available on the MyHR website. What is the current direction on returning to the workplace and remote work? Does suspending the return to workplace plans mean those plans are cancelled and employees who want to work remotely permanently will be allowed to do so? If you think you may have symptoms, the self-assessment tool can help you determine if you need further assessment.  What are the considerations needed when planning for a work event or large meeting while there is the potential for exposure to COVID-19? If an event is already scheduled, should the event be cancelled? What does “close contact” mean? When do I need to ask an employee for an STO2 form or doctor’s note?  Provincial Health Officer announced increased measures to address the continued growth in COVID-19 cases in B.C. This included direction for employers to temporarily suspend plans to return employees to workplace settings until at least the new year. All return to workplace plans are suspended provincewide effective Monday, November 23 until further notice.  The return to workplace plans are based on guidelines developed by the BC Public Service Agency that align with orders and direction of the Provincial Health Officer and WorkSafeBC. No employee is required to work from home except those required to self-isolate due to travel or possible exposure to COVID-19. Remote working arrangements that weren’t in place before the pandemic should be considered temporary.  On November 24, under the Emergency Program Act an order was issued regarding face coverings in indoor public spaces. The November 24 order covers high-traffic public settings where people who do not know each other often interact. Workplaces must develop client mask/face covering procedures to be included in their COVID-19 Workplace Assessment Tool.  All workplaces must develop client mask/face covering procedures to be included in their COVID-19 Workplace Assessment Tool and review their Assessment. Masks are not a replacement for physical distancing or physical barriers. Physical distancing is the most important control for the transmission.  Provincial Health Officer reported on November 19 about exposures in social work situations. Work associated activities such as carpooling, driving together to get a takeout lunch, or sitting together while having a work break can all pose a risk of coronavirus exposure. Don’t share food, plates or cutlery in staff rooms.  People with chronic health conditions are at a higher risk of developing more severe illness from COVID-19. These conditions include heart disease, high blood pressure, lung disease, diabetes and cancer. Supervisors are expected to be flexible and support requests for remote working where operationally feasible. Managing employee’s workplace needs can involve collecting medical information.  Employees are required to provide relevant and appropriate information to support their request for accommodation. The long-term practice is for employees to provide this information to supervisors with doctors’ notes and letters. Supervisors should maintain this information in a secured location in the employee’s workplace supervisory file.  SARS-CoV-2, the virus that causes COVID-19, spreads from an infected person to others through respiratory droplets and aerosols. The WHO and the Public Health Agency of Canada have acknowledged emerging evidence that airborne transmission of the coronavirus is possible and may contribute to infection.  The BC Centre for Disease Control summarizes coronavirus transmission this way. Respiratory diseases, like influenza and COVID-19, are spread by liquid droplets that come out of the mouth and nose when a person coughs, sneezes, and sometimes, when. a person talks or sings. The virus may also spread when a. person touches another person (i.e., a handshake) or a surface or an object (also referred to as a fomite) that has the virus on it, and then touches their mouth, nose or eyes with unwashed hands.  The federal government recently announced that for the 2020 tax year it is simplifying the process and requirements related to claiming home-office related expenses on an employee’s tax return. The Canada Revenue Agency (CRA) has established an information page advising that you are eligible to claim a deduction for home office expenses.  Many of the practices outlined in the new workplace safety guidelines are applicable in an LWS work environment. Safety in the workplace during this time of Covid-19 is highly dependent on prevention precautions. Public Health is notified of all positive tests immediately and contact tracing will begin by speaking to the COVID-19 positive employee.  Since April 23, testing guidelines have been updated to include testing any individuals with new respiratory or systemic (more generalized) symptoms compatible with COVID-19. This universal approach to testing symptomatic individuals is an important part of monitoring the impact of changing public health recommendations. Employees who have been advised they are close contacts should stay away from the workplace.  A family member (partner, relative, child) of a worker becomes sick with an illness but has not been COVID tested yet. If the worker is asymptomatic, they can continue to attend work and are not required to self-isolate. Coughing after recovery may persist for several weeks and does not mean the individual is infectious.  A family member (partner, child, relative) of a worker has been recommended to stay home for 14 days since they have been identified by Public Health as a close contact of a COVID positive case. The worker lives in the same household as the family member. Can the worker continue to attend work, or do they need to self isolate as well? If the symptomatic family member becomes ill, the worker will need to be medically assessed and tested.  The risk of contracting COVID-19 even through passing documents and other items back and forth between workers or clients is low. If you commute to work on public transit, physical distancing and hand washing are effective preventative measures.  When an employee tells their supervisor that they have been exposed to COVID-19 and they have no symptoms, does that employee need to self-isolate? It is important to understand how the employee knows the source is a confirmed case. Low risk exposures include walking by the person, or briefly being in the same room. Exposures that are not close contacts (see above) should self-monitor daily.  An Emergency Order under the Quarantine Act was implemented that requires any person entering Canada by air, sea or land to quarantine (self-isolate) themselves for 14 days whether or not they have symptoms of COVID-19. Employees returning from outside Canada, including the United States, must self- isolate for 14    days to observe for any developing symptoms in order to help prevent the spread of the disease. Employees that have not travelled can continue to participate in the workplace.  If the employee was medically recommended to self-isolate for 14 days due to possible COVID-19 exposure, and they cannot work from home, you should put the employee under STIIP (Short Term Illness and Injury Plan) for the duration."
+}

@@ -37,26 +37,31 @@ async function parse(name) {
 		}
 	}
 
-	console.log("performing named entity recognition...")
-	const full = res.join(" ")
-	const r = await axios.post(api_url + "/ner", querystring.stringify({ text: full }))
+	try {
+		console.log("performing named entity recognition...")
+		const full = res.join(" ")
+		const r = await axios.post(api_url + "/ner", querystring.stringify({ text: full }))
 
-	const CATEGORY_THRESH = 0.4
-	const c = await axios.post(api_url + "/categorize", querystring.stringify({ text: full }))
-	console.log(c)
-	const categories = Object.keys(c.data).filter(cat => c.data[cat] > CATEGORY_THRESH)
+		const CATEGORY_THRESH = 0.4
+		const c = await axios.post(api_url + "/categorize", querystring.stringify({ text: full }))
+		console.log(c)
+		const categories = Object.keys(c.data).filter(cat => c.data[cat] > CATEGORY_THRESH)
 
-	const retData = JSON.stringify({
-		named_entities: r.data,
-		categories: categories,
-		summary: full,
-	}, null, 4)
+		const retData = JSON.stringify({
+			named_entities: r.data,
+			categories: categories,
+			summary: full,
+		}, null, 4)
 
-	fs.writeFile(`./results/${name}.json`, retData, (err) => {
-		if (err) {
-			console.log(err);
-		}
-	});
+		fs.writeFile(`./results/${name}.json`, retData, (err) => {
+			if (err) {
+				console.log(err);
+			}
+		});
+	} catch (e) {
+		console.log(`uhoh: ${e} (most likely not enough text)`)
+	}
+
 }
 
 exports.parse = parse
