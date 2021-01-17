@@ -27,15 +27,6 @@ ALLOWED_EXTENSIONS = {'pdf'}
 #     "I-LOC"    # Location
 # ]
 
-def email(to, subject, text):
-	return requests.post(
-            f"{os.getenv('MAILGUN_API_BASE')}/messages",
-          		auth=("api", os.getenv("MAILGUN_KEY")),
-          		data={"from": "Mailgun Sandbox <postmaster@sandbox63c93d12ad14430b94a045351e329c88.mailgun.org>",
-                            "to": to,
-                            "subject": subject,
-                            "text": text})
-
 @app.route('/', methods=['GET'])
 def healthCheck():
     logging.info("Health check ping received")
