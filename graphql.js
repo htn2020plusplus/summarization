@@ -85,12 +85,12 @@ parseResults(results).then(entities => {
     const reqs = entities.map(entity => {
         entity.categories = []
         const query = gql`
-        mutation CreateNamedEntity($name: String!, $type: String!, $description: String!, $categories: [String!]!) {
-            createNamedEntity(data: { name: $name, type: $type, description: $description, categories: $categories }) {
+        mutation CreateNamedEntity($entity: String!, $group: String!, $description: String!, $categories: [String!]!) {
+            createNamedEntity(data: { name: $entity, type: $group, description: $description, categories: $categories }) {
                 name
                 type
                 categories {
-                    ...
+                    id
                 }
                 description
             }
@@ -100,5 +100,35 @@ parseResults(results).then(entities => {
         return request('http://localhost:3000/', query, entity)
     })
 
-    Promise.all(reqs).then(console.log)
+    Promise.all(reqs).then(console.log).then(() => {
+        // index computation
+        console.log('============')
+        var ne_set = new Set()
+        entities.forEach(ent => ne_set.add(ent.entity))
+        ne_set = Array.from(ne_set)
+        const longest_entity = Math.max(...(ne_set.map(el => el.length)))
+
+        const cumulative = {}
+        for (var i = 0; i < results.length; i++) {
+            const f = results[i]
+            const obj = JSON.parse(fs.readFileSync(`./results/${f}.json`, 'utf8'));
+
+            const indices = []
+            for (var j = 0; j < obj.summary.length - longest_entity; j++) {
+                ne_set.forEach(ne => {
+                    if (obj.summary.substring(j, j + ne.length) == ne) {
+                        indices.push({
+                            startPosition: j,
+                            endPosition: j + ne.length,
+                            entity: ne,
+                        })
+                    }
+                })
+            }
+
+            cumulative[f] = indices
+        }
+        console.log(cumulative)
+    })
+
 })

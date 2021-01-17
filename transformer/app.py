@@ -33,6 +33,9 @@ def summarizeReq():
     text = data['text']
     print(f"got summarization request of length {len(text)}")
 
+    if len(text) < 10:
+        return
+
     answer = summarizer(text, max_length=150, min_length=15, do_sample=False)
 
     # process
@@ -118,7 +121,7 @@ def nerReq():
         valid_score = entity["score"] > NER_THRESH
         should_discard = DISCARD_MISC and entity["entity_group"] == 'misc'
 
-        if valid_score and not should_discard:
+        if valid_score and not should_discard and len(entity["word"]) > 1:
             filtered_ners.append(entity)
 
     return jsonify({"entities": filtered_ners}), 200
