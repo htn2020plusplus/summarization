@@ -46,7 +46,7 @@ async function parseNamedEntities(f, ne_set, named_entities) {
     }
 }
 
-async function parseResults(results) {
+async function loadNamedEntities(results) {
 
     const ne_set = new Set()
     const named_entities = []
@@ -77,12 +77,12 @@ function syncCategories() {
 
     return Promise.all(reqs).then(console.log)
 }
-syncCategories()
+// syncCategories()
 
 
 // name entities
-const results = fs.readdirSync('./results').map(d => d.split(".")[0])
-parseResults(results).then(async entities => {
+const results = fs.readdirSync('./results').map(d => d.split(".")[0]).filter(p => p !== "archive")
+loadNamedEntities(results).then(async entities => {
     const reqs = entities.map(entity => {
         entity.categories = []
         const mutate = gql`
@@ -171,6 +171,55 @@ parseResults(results).then(async entities => {
 
         console.log(`progress: ${i + 1}/${flattened.length}`)
     }
-}).then(() => {
-    
-})
+
+    return cumulative
+}).then(async (indexes) => {
+    // event mutation
+    const idx_promises = results.map(async f => {
+        const evt = JSON.parse(fs.readFileSync(`./results/${f}.json`, 'utf8'))
+
+        const promises = indexes[f].map(idx => {
+            const findQuery = gql`
+            query FetchIdx($entity: String!) {
+                searchIndex(entity: $entity) {
+                    id
+                }
+            }
+            `
+
+            console.log(idx)
+
+            return request('http://localhost:3000/', findQuery, { entity: idx.entity })
+        })
+
+        const idx = (await Promise.all(promises)).map(idx => idx.searchIndex.id)
+        return {
+            indices: idx,
+            text: evt.summary,
+            description: "Policy uploaded to Legist",
+            timestamp: new Date(),
+        }
+    })
+
+    const docs = await Promise.all(idx_promises)
+    const promises = docs.map(doc => {
+        const mutate = gql`
+        mutation CreateEvent($indices: [String!]!, $description: String!, $text: String!, $timestamp: String!) {
+            createEvent(data: { description: $description, text: $text, timestamp: $timestamp, indices: $indices }) {
+                indices {
+                    id
+                }
+                description
+                text
+                timestamp
+            }
+        }
+        `
+
+        return request('http://localhost:3000/', mutate, doc)
+    })
+
+    return Promise.all(promises)
+}).then(evts => {
+
+}).then(console.log)
