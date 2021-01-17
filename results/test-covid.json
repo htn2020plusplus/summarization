@@ -16,13 +16,6 @@
                 "word": "MyHR"
             },
             {
-                "end": 817,
-                "entity_group": "organization",
-                "score": 0.8266711235046387,
-                "start": 811,
-                "word": "Health"
-            },
-            {
                 "end": 1256,
                 "entity_group": "organization",
                 "score": 0.9989520758390427,
@@ -42,28 +35,17 @@
                 "score": 0.9809323430061341,
                 "start": 1331,
                 "word": "WorkSafeBC"
-            },
-            {
-                "end": 2238,
-                "entity_group": "organization",
-                "score": 0.872147798538208,
-                "start": 2228,
-                "word": "Provincial"
             }
         ]
     },
     "categories": [
-        "defence",
         "economy",
         "education",
-        "energy",
         "environmental",
         "healthcare",
         "indigenous",
         "infrastructure",
-        "legal",
         "media",
-        "parliament",
         "social development",
         "technology",
         "transportation"

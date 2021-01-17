@@ -1,0 +1,213 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 42,
+                "entity_group": "organization",
+                "score": 0.9983564138412475,
+                "start": 5,
+                "word": "Transportation Safety Board of Canada"
+            },
+            {
+                "end": 47,
+                "entity_group": "organization",
+                "score": 0.9991040229797363,
+                "start": 44,
+                "word": "TSB"
+            },
+            {
+                "end": 155,
+                "entity_group": "organization",
+                "score": 0.9978665113449097,
+                "start": 150,
+                "word": "Board"
+            },
+            {
+                "end": 429,
+                "entity_group": "organization",
+                "score": 0.998738420009613,
+                "start": 392,
+                "word": "Transportation Safety Board of Canada"
+            },
+            {
+                "end": 434,
+                "entity_group": "organization",
+                "score": 0.999120682477951,
+                "start": 431,
+                "word": "TSB"
+            },
+            {
+                "end": 552,
+                "entity_group": "organization",
+                "score": 0.9984562397003174,
+                "start": 547,
+                "word": "Board"
+            },
+            {
+                "end": 709,
+                "entity_group": "organization",
+                "score": 0.9991228580474854,
+                "start": 707,
+                "word": "CN"
+            },
+            {
+                "end": 729,
+                "entity_group": "location",
+                "score": 0.8453295628229777,
+                "start": 712,
+                "word": "Drummondville Sub"
+            },
+            {
+                "end": 910,
+                "entity_group": "organization",
+                "score": 0.9939344227313995,
+                "start": 907,
+                "word": "VIA"
+            },
+            {
+                "end": 1000,
+                "entity_group": "organization",
+                "score": 0.9911637008190155,
+                "start": 998,
+                "word": "LE"
+            },
+            {
+                "end": 1009,
+                "entity_group": "organization",
+                "score": 0.994019607702891,
+                "start": 1005,
+                "word": "ICLE"
+            },
+            {
+                "end": 1084,
+                "entity_group": "organization",
+                "score": 0.7351067662239075,
+                "start": 1082,
+                "word": "29"
+            },
+            {
+                "end": 1368,
+                "entity_group": "location",
+                "score": 0.9720549881458282,
+                "start": 1355,
+                "word": "Drummondville"
+            },
+            {
+                "end": 1413,
+                "entity_group": "organization",
+                "score": 0.9955412000417709,
+                "start": 1407,
+                "word": "CN RTC"
+            },
+            {
+                "end": 1580,
+                "entity_group": "location",
+                "score": 0.8830351829528809,
+                "start": 1563,
+                "word": "Drummondville Sub"
+            },
+            {
+                "end": 1602,
+                "entity_group": "organization",
+                "score": 0.99876669049263,
+                "start": 1600,
+                "word": "CN"
+            },
+            {
+                "end": 1628,
+                "entity_group": "location",
+                "score": 0.959353506565094,
+                "start": 1622,
+                "word": "Québec"
+            },
+            {
+                "end": 1636,
+                "entity_group": "location",
+                "score": 0.9763623476028442,
+                "start": 1629,
+                "word": "Windsor"
+            },
+            {
+                "end": 1668,
+                "entity_group": "organization",
+                "score": 0.9977387189865112,
+                "start": 1666,
+                "word": "CN"
+            },
+            {
+                "end": 1691,
+                "entity_group": "organization",
+                "score": 0.8299557268619537,
+                "start": 1688,
+                "word": "VIA"
+            },
+            {
+                "end": 1738,
+                "entity_group": "location",
+                "score": 0.9985759258270264,
+                "start": 1732,
+                "word": "Ottawa"
+            },
+            {
+                "end": 1747,
+                "entity_group": "location",
+                "score": 0.9990283846855164,
+                "start": 1740,
+                "word": "Ontario"
+            },
+            {
+                "end": 1756,
+                "entity_group": "location",
+                "score": 0.9987305998802185,
+                "start": 1749,
+                "word": "Toronto"
+            },
+            {
+                "end": 1777,
+                "entity_group": "location",
+                "score": 0.9989662170410156,
+                "start": 1771,
+                "word": "Quebec"
+            },
+            {
+                "end": 1781,
+                "entity_group": "organization",
+                "score": 0.8043397665023804,
+                "start": 1779,
+                "word": "VI"
+            },
+            {
+                "end": 1908,
+                "entity_group": "organization",
+                "score": 0.8863286972045898,
+                "start": 1906,
+                "word": "##TC"
+            },
+            {
+                "end": 2288,
+                "entity_group": "organization",
+                "score": 0.8014439344406128,
+                "start": 2280,
+                "word": "Drummond"
+            }
+        ]
+    },
+    "categories": [
+        "agriculture",
+        "defence",
+        "economy",
+        "education",
+        "energy",
+        "environmental",
+        "healthcare",
+        "indigenous",
+        "infrastructure",
+        "legal",
+        "media",
+        "parliament",
+        "social development",
+        "technology",
+        "transportation"
+    ],
+    "summary": " The Transportation Safety Board of Canada (TSB) investigated this occurrence for the purpose of advancing transportation safety. The findings of the Board are not binding on the parties to any legal, disciplinary or other proceedings. Some of the content in this report is subject to the copyright of another party and is protected under the Copyright Act and international agreements.  The Transportation Safety Board of Canada (TSB) investigated this occurrence for the purpose of advancing transportation safety. It is not the function of the Board to assign fault or determine civil or criminal liability. This report is not created for use in the context of legal, disciplinary or other proceedings.  CN’s Drummondville Subdivision is a single main track with several sidings where trains can meet and pass each other. VIA 28 and VIA 29 were scheduled to meet and passed each other in accordance with VIA's schedule. The crew of both trains consisted of 2 qualified locomotive engineers. The LE and ICLE switched positions and briefed on the expected stop at Signal 991.  VIA 29’s crew members were unaware that they had passed a Stop indication or that VIA 28 had only just cleared the main track. There were no injuries. Table 1 provides a summary of the events based on the review of the available information.  VIA 28 was travelling through the Drummondville west siding switch at Mile 99.14. The CN RTC received a CROR Rule 439 alarm**** for Signal 991. “Run through” indicates that the wheel flanges of rolling stock have forced over a track switch.  Drummondville Subdivision belongs to CN and is part of the Québec–Windsor rail corridor. It is used by CN freight trains and VIA passenger trains travelling to and from Ottawa, Ontario; Toronto; and northern Quebec. VIA 29’s LE had 10 years of experience in train operations, and started working as an LE for VIA in 2011.  The CTC allows the RTC to monitor a train’s progress along blocks in a subdivision. Signals are displayed on the rail traffic control screen either as a Stop or as a permissive indication. Signal indications convey to the train crew information about the speed and other limits within which the train may operate.  Signal 991 is a high-mast, double-aspect signal located at Mile 99.1 of the CN Drummondville Subdivision, 1.4 miles (7392 feet) from Signal 1005. For a westbound movement, such as VIA 29, Signal 105 would not normally be illuminated at the same time as Signal 1091. However, because the railway signalling system is non-directional, if an eastbound train is occupying the block east of Signal 100 5, that signal will automatically be illuminated. In this occurrence, Signal 992 was illuminated until the train exited the block at Signal 1092.  VIA 28 extinguished the headlight while on the main track and entered the siding at 1936:54. VIA implemented a set of special instructions called the Cab Red Zone (CRZ) CRZ is described as ‘the environment in the locomotive cab during critical periods, especially when multitasking is required by members of the train crew.  VIA 29 received a Clear to Stop signal indication at Signal 983. The crew then stopped at the Drummondville Station, switched places, confirmed the signal indication, and proceeded. Despite being in CRZ, the operating crew members of both trains discussed transfer of food items over the radio. The ICLE records in writing the indication of the last signal received at any VIA station.  Crew resource management (CRM) focuses on providing crews with the interpersonal skills required to carry out their tasks safely. CRM training typically consists of an ongoing training and monitoring process through which personnel are trained to approach their activities from a team perspective rather than from an individual perspective.  VIA 29 was travelling through the west siding switch at the time of the incident. Signal 1005 extinguished after VIA 28 had completely entered the siding. Video analysis concluded the distance between the two locomotives was 377 feet. The distance would have been approximately 8 seconds at its speed.  At the Montréal rail traffic control office, false positive alarms had been occurring on a regular basis. A rigorous investigation of each alarm was required to confirm the location and source in order to determine if there had been an emergency.  192 false positive alarms received in the Montréal rail traffic control office. 192 false positives received in two weeks (08 to 22 November 2018) of 2 weeks. At their most advanced level, train control systems can prevent the following types of occurrences.  The TSB recommended that major Canadian passenger and freight railways to implement physical fail-safe train controls. In the United States, such a system is called positive train control (PTC) In Canada, there are no ETC systems in use by freight or passenger railways; however, many commuter rail services have implemented such systems.  In the United States, the National Transportation Safety Board has investigated 78 occurrences that could have been prevented had an ETC system in its most advanced level been in place. These occurrences resulted in 52 derailments (520 derailed rolling stock) • 40 train collisions, of which 34 resulted in a derailment • 8 fatalities • 316 injuries to employees and passengers 1.11.2 Positive train control (United States initiative)  In May 2018, the Railway Safety Act (RSA) was amended to mandate the installation of locomotive voice and video recorders in the locomotive cabs of Canada’s federally regulated railways. The use of LVVRs is the only objective and reliable method to more clearly determine the influence of human factors such as employee communications, distractions, fatigue, and training.  The TSB completed the following laboratory report in support of this investigation. The analysis will focus on signal recognition by the train crew and the handling of Rule 439 alarms. The mechanical condition of the locomotives and the signal system were not contributory to the occurrence.  Crew members on both VIA trains turned on the cab lights and waved at each other during the meet. This created a distraction while the crew should have been adhering to the Cab Red Zone (CRZ) VIA 29’s ICLE was visually inspecting VIA 28 as it was passing by, even though passenger trains in movement are exempted from inspecting passing trains according to CROR Rule 110.  Between 2010 and 2019, there has been 32 occurrences per year in which a train crew did not respond appropriately to a signal indication displayed in the field. Since 1998, the TSB has investigated 15 occurrences where a train exceeded its limits of authority, of which 13 resulted in a collision or a derailment.  The use of locomotive voice and video recorders (LVVR) is an objective and reliable method of more clearly determining the role that human factors (e.g., crew communications, distraction, and fatigue) play in a railway occurrence. The presence of an LVVR would have helped the TSB to confirm the events that occurred in the cab more quickly and comprehensively.  Transport Canada conducted an inspection and issued a letter of non-compliance to VIA Rail Canada Inc. (VIA) for violations of the Canadian Rail Operating Rules (CROR) VIA took the following safety actions: The risks related to radio communications with locomotive engineers (LEs) about non-urgent subjects and their possible distraction were relayed to all employees.  Since 1998, the TSB has investigated 15 occurrences involving misinterpretation, misperception, and/or misapplication of signal indications.  On 04 June 2016, Canadian National Railway Company (CN) freight train Q11251-03 collided at 18 mph with the tail end of train M30251-02 at Mile 34.9 near Carvel. No cars derailed as a result of the collision. R15D0118 (Montréal, Quebec) passenger train No. 605, carrying 14 passengers, derailed while negotiating a crossover at 55 mph, where the authorized speed was 15 mph.  R13Q0001 (Mai, Quebec) freight train FCN 05 collided with the rear end of iron ore train BNL-005 at Mile 124.2 on the QNS&L Wacouna Subdivision, near Mai. R12T0038 (Aldershot, Ontario) – On 26 February 2012, VIA train No. 92 (VIA 92) travelled east from Niagara Falls to Toronto, Ontario, on track 2 of the CN Oakville Subdivision.  R09V0230 (Redgrave, British Columbia) – On 30 October 2009, CP train 355-429, operating westward on the signalled siding track at Redgrave (Mountain Subdivision), collided with the side of eastbound CP train 110-30. R07E0129 (Peers, Alberta) – A collision between CN trains 417 and 342 at Peers derailed 1 locomotive and 27 cars and damaged an additional 14 cars.  TSB Recommendation R00-05  assess the impact of noise on voice communication in locomotive cabs and ensure that crew members can effectively communicate safety-critical information."
+}

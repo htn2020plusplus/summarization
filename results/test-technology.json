@@ -1,0 +1,80 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 64,
+                "entity_group": "organization",
+                "score": 0.9634013772010803,
+                "start": 57,
+                "word": "GEOSCAN"
+            },
+            {
+                "end": 293,
+                "entity_group": "organization",
+                "score": 0.9342333674430847,
+                "start": 288,
+                "word": "NRCan"
+            },
+            {
+                "end": 868,
+                "entity_group": "person",
+                "score": 0.9402121752500534,
+                "start": 858,
+                "word": "Gopalswamy"
+            },
+            {
+                "end": 891,
+                "entity_group": "location",
+                "score": 0.9384407997131348,
+                "start": 886,
+                "word": "Earth"
+            },
+            {
+                "end": 1599,
+                "entity_group": "organization",
+                "score": 0.9941404972757611,
+                "start": 1561,
+                "word": "Canadian Space Weather Forecast Center"
+            },
+            {
+                "end": 1606,
+                "entity_group": "organization",
+                "score": 0.9964746236801147,
+                "start": 1601,
+                "word": "CSWFC"
+            },
+            {
+                "end": 1691,
+                "entity_group": "organization",
+                "score": 0.7060673832893372,
+                "start": 1689,
+                "word": "RA"
+            },
+            {
+                "end": 1936,
+                "entity_group": "organization",
+                "score": 0.8251920938491821,
+                "start": 1934,
+                "word": "EU"
+            }
+        ]
+    },
+    "categories": [
+        "agriculture",
+        "defence",
+        "economy",
+        "education",
+        "energy",
+        "environmental",
+        "healthcare",
+        "indigenous",
+        "infrastructure",
+        "legal",
+        "media",
+        "parliament",
+        "social development",
+        "technology",
+        "transportation"
+    ],
+    "summary": " This publication is available for free download through GEOSCAN (https://geoscan.nrcan.ca/). It is published in part or in whole, and by any means, for personal or public non-commercial purposes. Commercial reproduction and distribution is prohibited except with written permission from NRCan.  Space weather impacts high frequency (HF) (3-30 MHz) radio communication systems causing a partial to complete signal  loss. Radio signals travel through the D-region ionosphere, which has a relatively low electron density, and then turn toward the ground due to either refraction  or reflection in  the much  more  dense  E  and/or F  region  ionospheres. The sun is a major source of increased ionization and therefore absorption.  Energetic protons expelled by coronal mass ejections (CMEs) and accelerated to near relativistic speeds by the CME shock front (Gopalswamy, 2003) reach the Earth after a few hours penetrating deep into the high-latitude  D-region  ionosphere. This is called  polar cap  cap absorption (PCA), and can extend across the region reaching as far equatorward as 60-65° magnetic latitude. Auroral absorption is localized in regions on the nightside ionosphere lasting several hours.  Absorption caused by solar X-ray flares can potentially lead to a fadeout of short wave signals or shortwave fadeout (SWF) and, for example, a loss of radio communication in affected regions. Ionospheric absorption is monitored using a relative ionospheric opacity meter (riometer)  This report describes, in detail, modelling techniques employed by the Canadian Space Weather Forecast Center (CSWFC) on the basis of SWF modelling techniques. It follows methodologies employed by D-RAP (http://www.swpc.gov/content/global-d-region-absorption-prediction-documentation) The following sections describe data, theory, and the algorithm governing the current modelling algorithm.  HAF and Ax are set to 0 as ionization by X-ray and EUV radiation is strictly a dayside phenomena. A winter anomaly is a mid-latitude phenomena attributed to stratospheric warming. The cosχ dependence is reasonable during summer and equinox, but inadequate during winter months.  As with SWF, polar cap absorption is modelled from D-RAP. PCA is a wide-spread phenomenon spanning the entire high-latitude region poleward of 65° MLAT. Future work will involve the improvement of this theory based on data from Canadian riometers.  Rogers and Honary (2015) visually demonstrate that the optimized D-RAP approach notably improves the agreement between measured and modelled data at measurement coordinates. Rogers et al. (2016) further improved their approach by replacing the linear transition from AD to AN in the twilight zone (AT) seen in equation (5) with a more gradual Gauss error-function transition.  The cutoff energy Ec is determined based on the invariant latitude of the coordinate of interest and the geomagnetic activity level. Invariant latitude is found by tracing a magnetic field line from a given point in the equatorial plane to the Earth’s surface assuming a centered dipole magnetic field. The calculations outlined below will need to be performed any time the input variables (Kp or equivalent Kp, and integral proton flux) change.  Figure 2:  Illustration of how the proton cutoff energy is determined given geomagnetic activity level and magnetic latitude. Integral proton is measured at discrete energy levels by the GOES satellites. The proton energy cutoff Eo is the maximum of Eo on the dayside and 2.2 MeV on the nightside.  This section describes data and instruments needed for modeling ionospheric absorption due to polar cap absorption and shortwave fadeout. Absorption values used for absorption modelling are derived from 30 MHz riometer data collected from a network of riometers across Canada.  The CSWFC absorption modelling algorithm relies on the relationship between riometer-derived absorption and the integral proton flux and solar x-ray flux measured by the GOES satellites. Calculation of energy cutoffs necessary for determining the integral Proton flux require information about geomagnetic activity levels. The algorithm makes use of the optimized D-RAP modelling technique developed by Rogers and Honary.  mD and mN slope values from equation (5) best represents a data set comprised of all available absorption values collected from all available stations over a 30-minute period ending at the time of interest are determined. Optimization is performed at each time step, and data for  the  time  set in question is returned.  Using the values of mD and mN determined in the previous step, calculate absorption across the entire high-latitude region using equation (5) Figure 5 shows an example of the absorption modelled using the CSWFC absorption modelling algorithm. The lower limit of the plotted absorption is 0.4 dB; values <0.4dB are considered to be noise.  Figure 5: Absorption modelled using the NRCan absorption modelling algorithm. Figure 6:  Same as Figure 5, for a different interval. Figure 7:  Average difference of 5.6 dB. severely underestimated with  differences ranging from 2.6 to 18.2 dB.  The model only accounts for two forms of absorption and would greatly improve through the addition of models for absorption due to other sources such as auroral absorption and sudden commencement absorption. In addition to deficiencies in the underlying model, there can be inconsistencies in the data itself due to differences between the calibration of instruments operated by different centers, or local phenomenon.  A. Bradley, J. Hargreaves, N. A. Frissell, E. Miller, S. R. Ceglia, D. Pascoe,  Sinanis,  Smith,  Williams,  and A. Shovkoplyas (2014),  using real-time  amateur  radio  reporting networks,  Space  Weather, 12, pp. 651–656.  The National Research Council published a report on severe space weather events in 2008. The National Institute of Meteorology and Space Weather published the findings in 2015.  A. Cogger, G. C. Stonehocker, H. J. H. Boberg, A. A. Tylka, J. T. F., A. F. Tyleka, M. Tilleka and A. R. Tilly (2009) improved modeling of midlatitude D-region ionospheric. absorption of radio signals during solar x-ray flares."
+}

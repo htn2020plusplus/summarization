@@ -1,0 +1,86 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 53,
+                "entity_group": "organization",
+                "score": 0.9717056155204773,
+                "start": 40,
+                "word": "Supreme Court"
+            },
+            {
+                "end": 77,
+                "entity_group": "location",
+                "score": 0.9951475858688354,
+                "start": 71,
+                "word": "Canada"
+            },
+            {
+                "end": 100,
+                "entity_group": "person",
+                "score": 0.9984916687011719,
+                "start": 79,
+                "word": "Valentina Rita Scotti"
+            },
+            {
+                "end": 185,
+                "entity_group": "location",
+                "score": 0.9978250861167908,
+                "start": 179,
+                "word": "Canada"
+            },
+            {
+                "end": 349,
+                "entity_group": "location",
+                "score": 0.9986786842346191,
+                "start": 343,
+                "word": "Quebec"
+            },
+            {
+                "end": 595,
+                "entity_group": "person",
+                "score": 0.9933138291041056,
+                "start": 587,
+                "word": "Crenshaw"
+            },
+            {
+                "end": 749,
+                "entity_group": "location",
+                "score": 0.9991090297698975,
+                "start": 743,
+                "word": "Canada"
+            },
+            {
+                "end": 1052,
+                "entity_group": "organization",
+                "score": 0.991112232208252,
+                "start": 1039,
+                "word": "Supreme Court"
+            },
+            {
+                "end": 1874,
+                "entity_group": "organization",
+                "score": 0.9928964674472809,
+                "start": 1861,
+                "word": "Privy Council"
+            }
+        ]
+    },
+    "categories": [
+        "agriculture",
+        "economy",
+        "education",
+        "energy",
+        "environmental",
+        "healthcare",
+        "indigenous",
+        "infrastructure",
+        "legal",
+        "media",
+        "parliament",
+        "social development",
+        "technology",
+        "transportation"
+    ],
+    "summary": " The challenges of intersectionality in Supreme Court jurisprudence in Canada. Valentina Rita Scotti discusses the impact of the principle of equality in the Charters approved in Canada since the 1867 British North American Act. The essay assesses whether intersectionality represents for Aboriginal  women a source of double discrimination.  Quebec approved Bill 62, ‘An Act to foster adherence to State religious neutrality’ on 18 October 2017, with a (not-so-implicit) reference to the Islamic veil. The idea of gender intersectionality has only slowly developed among scholars since Crenshaw’s seminal article.  This  single-axis  frame  for  anti-discrimination  policies  and gender  discourses has  been abandoned  only  very recently. Canada faces two challenges: overcoming   the   patriarchal assumption of  male superiority. The second is the need to ensure the collective rights of Aboriginal peoplesIII and of minorities.  The 1982 Charter of Canada is considered as a turning point for the legal framework as well as for the Supreme Court’s understanding of gender equality. This essay is based on feminism focusing on the ‘interrelationship among inequalities of sex, race, ethnicity, social class   and sexual orientation’ In this analysis, the approval of the 1982 Charter has been Unauthenticated.  The 1840  Act  of the Union  of Canada was  neutral as  as  it entered into force. Women were denied the right to vote by establishing it only for British (or naturalized) males over 21 years old. World War I partially changed societal behaviour, and women’s participation in the military effort was rewarded with a recognition of the vote in some Provinces.  In 1920 the Dominion Elections Act was amended to recognise  all  Canadians,  male  or female,  over  21 as  eligible  voters  in federal elections. In 1929 a specific decision of the Privy Council was needed to recognise women’s voting eligibility. In spite of this recognition of gender equality, women belonging  to minorities continued to be  considered  minors for a long time.  The Canadian Bill of Rights recognized that rights should be protected ‘without discrimination by reason of race, national origin, colour, religion or sex’ Despite the recognition of rights and the enactment of laws (almost) equalising women to men in the field of private law, sex still was not fully  conceived  of  possible discrimination.  The Supreme Court’s adjudication on women's rights has proved quite beneficial, in opposition to the original patriarchal approach of the Canadian Supreme Court. In 1876 British common law rulings stated  ‘women  are  persons  in matters  of  pains, but are not persons in matters of rights and privileges’, it was the Privy Council which finally intervened in recognizing  women as persons in the legal sense.  The Canadian Supreme Court refused to recognise  discrimination  against pregnant women in the 1971  Unemployment  Insurance Act. The Court relied on the fact that ‘any inequality between the sexes in this area is not created by legislation but by nature’ The fallibility of such a test paradoxically emerged in the Bliss case,XI.  In 1999 the Court finally conceived of substantive equality as a direct derivation of sec. 15, which, in the opinion of the Court, has the aim ‘to prevent  the  violation  of  essential  human dignity  and freedom through the imposition of disadvantage, stereotyping, or political or social prejudice.  The issue of abortion was also discussed  in R.  v. Sullivan,XXI when  the  Supreme Court  had to  deal with  the case of  two midwives convicted of  criminal negligence for  causing  the death of a foetus. Gender stereotypes have affected its adjudications, at least in some cases.  In several cases, a claim for  gender  equality was raised by men. The position of the Supreme Court seemed to support men’s  claims, notwithstanding  possible consequences on women. The Thibaudeau decision continued to be evident twenty years later in the Thiba Trudeau decision.  The question was first regulated by the 1850 ‘Act for the Better Protection  of the  Lands  and Property of the Indians in Lower Canada’ It defined as criteria for being an Indian the fact of having ‘Indian blood’, and therefore of belonging to the ‘Body or Tribe of Indians’ Non-Indians who ‘intermarried with such Indians', people whose parents (one or both) would also have been considered Indians, were considered to be Indian.  Inuit, Metis, and First  Nations are Aboriginal groups, according to  1982 Constitutional Act. In 1988 Canada approved the Multiculturalism Act, which affirmed multiculturalism as  a  foundational principle of the State. Intersectionality between gender equality and religious freedom raised critical challenges for Canada.  Aboriginal women  started  to  suffer gender discrimination with the approval of  the 1951  amendment of the  Indian Act. As a partial compensation, women received a per capita share of the tribe’s capital funds.  Bill C-31 allowed women who lost their status through marriage to be  reinstated as  Status  Indians and  as  group  members. The discrimination women suffered due to the regulation of their status until the 2008 reform still, however, still affects their discrimination.  The federal government is still dealing with all these issues: cousins' issue, siblings' issue and omitted minors' issue. The government has individuated the issues: the differential  treatment of  children born out of wedlock of status fathers between 4 September 1951 and 17 April 1985.  Aboriginal women had to face the challenge for having their interest groups conceived of as  equal  to those not  explicitly lobbing  for women. Aboriginal women also failed to obtain recognition of their gender equality in decisions concerning  the acquisition  of  properties.  In Paul v.  Paul,XLI the  Court  dismissed  the appeal of a wife claiming  possession  of  the family residence her husband owned according to sec. 20 of the Indian Act. The Supreme Court  addressed  this  point in the 1999 R.  v. Morris,XLIV concerning the case of a man  who beat  and raped  his partner,  the Court  of Appeal  of British. Columbia.  Religious  communities in Canada benefit from a legal framework based on multiculturalism, which accords them great margins of discretion in ruling some aspects of their lives according to  religious  precepts. XLV decided to pay  specific attention to the cases of Muslim Canadian women.  In 2003, the Islamic Institute of Civil Justice was established for applying Islamic Law to family laws and inheritance. Despite the results of the Boyd Report, XLVI the Provincial  Government  of Ontario intervened in 2006 by amending  the  Arbitration  Act,  and  prohibited  the establishment  of  religious courts.  Bill 62,  mentioned above,  was  approved  in October 2017 and  has brought  the ban back to life. Bill could have been attacked for unconstitutionality on the grounds of an infringement of the freedom of religion, and for putting Muslim women under serious threat of gender discrimination.  The issue of the veil became relevant again in 2015, when a woman claimed her right to wear the niqab when taking her citizenship oath. The Federal Court  invalidated section 6.5 of the manual for the citizenship oath on the assumption of its mandatory nature.  The way conflicting equalities should be reconciled has represented a  highly  debated point among scholars. Some have argued that  liberal democracies should accord protection to cultural rights. Others have maintained that discrimination deriving  from cultural traditions should be respected.  Before colonization,  Aboriginals grounded gender  differences on behavioural differences instead of biological ones. Europeans completely misunderstood that farming was considered  a skilled activity by Aboriginal women. The Supreme Court, deciding on the governmental duty to consult  with  Aboriginal peoples, ignored  the recognized role of women in  decision-making  councils of Aboriginal communities.  ‘equality, when  constructed  as  sameness, perpetuates race and gender oppression’ (Monture and Okanee  1992:  237) The cases concerning the veil  concerning  the veil are illuminating, depicting women as   opponents  to  removal  of  the  veil when required  by  public authorities.  The case-by-case analysis approach is considered beneficial, as it may allow  for  the  effective  assurance of  substantive  equality, avoid  discrimination, and solve  the possible  issues raising  from  intersectionality. The application of the principle of anti-subordination deserves analysis and scholarly discussions.  First Nations peoples – for  long  time  individuated  as Indians – Metis and Inuit; when different treatments were provided for them it is explicitly stated. The Royal Commission on Bilingualism and Biculturalism recommended integration as the main policy to be fulfilled by the federal government.  This work is based on the idea that spouses willing to terminate their marriage should find a settlement out of court. Substantive equality was introduced in Law Society of British Columbia v. Andrews, [1989] 1 S.C.R. 143, but the test is still contested by Supreme Unauthenticated.  The failure of the claim raised a huge debate in the country persuading the government in introducing a new and fairer legislation on the issue. Bill S-3, introduced in the Senate of Canada on 25 October 2016, is still under consideration. The assimilationist attempt was led in a very crude way, which completely ignored Aboriginal traditions.  Special Joint Committee of the Senate and of the House of. Commons appointed in 1991 to consult  with  Canadians and report upon  amending  Constitution of Canada. Report took into account also the rights of Aboriginal Peoples.  The possibility of cultural defense has been rejected as an option for defending the perpetrators of violence against women in the Istanbul Convention, elaborated by the Council of Europe. Canada participated to its elaboration as a non-CoE country, but has not yet signed it.  Huntington Samuel P., 1993, ‘The Clash of Civilizations?’, Foreign Affairs LXXII(1): 22-49. Jamieson Kathleen, 1978, Indian Women and the Law in Canada: Citizens Minus. Kymlika Will, 1995, Multicultural citizenship, Oxford University Press, Oxford.  Native Women’s Association of Canada, Section 1.2 of the Canadian Human Rights Act: Balancing Collective and Individual Rights and the Principle of Gender Equality, July 2010."
+}

@@ -1,0 +1,89 @@
+{
+    "named_entities": {
+        "entities": [
+            {
+                "end": 122,
+                "entity_group": "location",
+                "score": 0.9997230470180511,
+                "start": 109,
+                "word": "United States"
+            },
+            {
+                "end": 260,
+                "entity_group": "location",
+                "score": 0.9640089869499207,
+                "start": 246,
+                "word": "Eastern Canada"
+            },
+            {
+                "end": 325,
+                "entity_group": "location",
+                "score": 0.9997774362564087,
+                "start": 319,
+                "word": "Canada"
+            },
+            {
+                "end": 445,
+                "entity_group": "location",
+                "score": 0.9994118213653564,
+                "start": 439,
+                "word": "Quebec"
+            },
+            {
+                "end": 944,
+                "entity_group": "location",
+                "score": 0.9990597069263458,
+                "start": 931,
+                "word": "United States"
+            },
+            {
+                "end": 1107,
+                "entity_group": "location",
+                "score": 0.9992150664329529,
+                "start": 1100,
+                "word": "Vermont"
+            },
+            {
+                "end": 1114,
+                "entity_group": "location",
+                "score": 0.9992609024047852,
+                "start": 1109,
+                "word": "Maine"
+            },
+            {
+                "end": 1175,
+                "entity_group": "location",
+                "score": 0.9954506754875183,
+                "start": 1162,
+                "word": "New Hampshire"
+            },
+            {
+                "end": 1221,
+                "entity_group": "location",
+                "score": 0.9982612729072571,
+                "start": 1213,
+                "word": "Michigan"
+            },
+            {
+                "end": 1275,
+                "entity_group": "location",
+                "score": 0.9981606006622314,
+                "start": 1267,
+                "word": "Michigan"
+            },
+            {
+                "end": 1464,
+                "entity_group": "location",
+                "score": 0.9996523559093475,
+                "start": 1451,
+                "word": "United States"
+            }
+        ]
+    },
+    "categories": [
+        "agriculture",
+        "legal",
+        "social development"
+    ],
+    "summary": " The Canadian maple syrup industry accounts for approximately 75% of the world’s maple syrup production. The United States is the second largest world producer accounting for approximately 24% of global production. Despite a cold, late spring in Eastern Canada, the 2019 maple harvest rose by 35% from a year earlier.  Canada is the world’s largest exporter of maple products, with exports valued at $430 million in 2019, up 6% from 2018. Quebec accounted for 97% of Canadian maple product exports for 2019. Maple syrup producers cited losses due to the shutdown of sugar shacks and decreased demand from the foodservice/hospitality industry.  Food available per person is calculated by dividing the domestic disappearance by the Canadian population as of July 1st of the reference year, at the retail level. Does not adjust for losses such as waste and/or spoilage in stores, households, private institutions or restaurants.  The United States maple syrup production value by state (thousands of US dollars)  20152016201720182019Vermont46,530,530    57,000   54,320   58,000 maple syrup produced in Vermont. Maine15,484,484   20,250   24,096   21,668   14,664. New Hampshire9,148   9,148. 9,715   6,960   6,960. Michigan7,358   5,555   7,680. 7,700. 6,700   (7,700) Michigan 7,873.  Top 10 importers of maple sugar and maple syrup (thousands of Canadian dollars)  20152016201720182019. 100% of Canadian imports of maple products are sourced from the United States."
+}
