@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "axios": "^0.21.1",
+    "chokidar": "^3.5.1",
     "form-data": "^3.0.0",
     "graphql": "^15.4.0",
     "graphql-request": "^3.4.0",

@@ -4,6 +4,10 @@ import flask
 import logging
 import os
 import torch
+import requests
+
+from dotenv import load_dotenv
+load_dotenv()
 
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForTokenClassification
 
@@ -22,6 +26,15 @@ ALLOWED_EXTENSIONS = {'pdf'}
 #     "B-LOC",   # Beginning of a location right after another location
 #     "I-LOC"    # Location
 # ]
+
+def email(to, subject, text):
+	return requests.post(
+            f"{os.getenv('MAILGUN_API_BASE')}/messages",
+          		auth=("api", os.getenv("MAILGUN_KEY")),
+          		data={"from": "Mailgun Sandbox <postmaster@sandbox63c93d12ad14430b94a045351e329c88.mailgun.org>",
+                            "to": to,
+                            "subject": subject,
+                            "text": text})
 
 @app.route('/', methods=['GET'])
 def healthCheck():
@@ -59,20 +72,37 @@ def summarizeReq():
     if len(text) < 10:
         return "too short", 400
 
-    answer = summarizer(text, max_length=150, min_length=15, do_sample=False)
+    answer = _summarize(text)
+    logging.info(f"processed summary: {answer}")
+
+    return jsonify({'summary': answer}), 200
+
+def _summarize(text):
+    answer = summarizer(text, max_length=150,
+                            min_length=15, do_sample=False)
 
     # process
     # get first rest
     # get summary text result
     # replace leading space before period
     answer = answer[0]['summary_text'].replace(" .", ".")
-
-    logging.info(f"processed summary: {answer}")
-
-    return jsonify({'summary': answer}), 200
+    return answer
 
 @app.route('/api/categorize', methods=['POST'])
 def categorize():
+
+
+    data = flask.request.form  # is a dictionary
+    text = data['text']
+    print(f"got categorization request of length {len(text)}")
+
+    if len(text) < 10:
+        return "too short", 400
+
+    res_proc = _categorize(text)
+    return jsonify(res_proc), 200
+
+def _categorize(text):
     categories = [
         "environmental",
         "defence",
@@ -91,18 +121,10 @@ def categorize():
         "media"
     ]
 
-    data = flask.request.form  # is a dictionary
-    text = data['text']
-    print(f"got categorization request of length {len(text)}")
-
-
-    if len(text) < 10:
-        return "too short", 400
-
     res = classifier(text, categories, multi_class=True)
-    res_proc = dict((key, value) for key, value in zip(res['labels'], res['scores']))
-
-    return jsonify(res_proc), 200
+    res_proc = dict((key, value)
+                    for key, value in zip(res['labels'], res['scores']))
+    return res_proc
 
 @app.route('/api/ner', methods=['POST'])
 def nerReq():
