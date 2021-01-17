@@ -1,0 +1,47 @@
+{
+    "policy": "Memorandum",
+    "named_entities": {
+        "entities": [
+            {
+                "end": 34,
+                "entity_group": "organization",
+                "score": 0.9915482401847839,
+                "start": 30,
+                "word": "CBSA"
+            },
+            {
+                "end": 97,
+                "entity_group": "location",
+                "score": 0.9994825720787048,
+                "start": 91,
+                "word": "Canada"
+            },
+            {
+                "end": 329,
+                "entity_group": "organization",
+                "score": 0.9951401054859161,
+                "start": 325,
+                "word": "CBSA"
+            },
+            {
+                "end": 374,
+                "entity_group": "organization",
+                "score": 0.9976173341274261,
+                "start": 370,
+                "word": "CBSA"
+            },
+            {
+                "end": 700,
+                "entity_group": "location",
+                "score": 0.999713122844696,
+                "start": 694,
+                "word": "Canada"
+            }
+        ]
+    },
+    "categories": [
+        "transportation",
+        "defence"
+    ],
+    "summary": " This memorandum explains the CBSA invoice requirements for commercial goods imported into Canada. For the Regulations governing the guidelines and general information contained in this memorandum, refer to the Accounting for Imported Goods and Payment of Duties Regulations.  The commercial invoice is the main document the CBSA relies on to provide this evidence. The CBSA requires two copies of the non-warehouse documents and three copies of warehouse documents. The importer or owner also requires one copy for his or her records.  Each manufactured article must have been significantly transformed in the country specified as the country of origin to its present form ready for export to Canada. Certain operations such as packaging, splitting, and sorting may not be considered as sufficient operations to confer origin.  Field 10) for the number of items recorded in the quantity field when they were sold by the vendor to the purchaser. Indicate the name and address of the person or organization shipping the goods to the consignee/purchaser."
+}

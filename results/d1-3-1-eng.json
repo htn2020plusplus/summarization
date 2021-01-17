@@ -1,0 +1,32 @@
+{
+    "policy": "Memorandum",
+    "named_entities": {
+        "entities": [
+            {
+                "end": 445,
+                "entity_group": "organization",
+                "score": 0.9988680779933929,
+                "start": 416,
+                "word": "Canada Border Services Agency"
+            },
+            {
+                "end": 451,
+                "entity_group": "organization",
+                "score": 0.9990171790122986,
+                "start": 447,
+                "word": "CBSA"
+            },
+            {
+                "end": 581,
+                "entity_group": "organization",
+                "score": 0.9969886839389801,
+                "start": 577,
+                "word": "CBSA"
+            }
+        ]
+    },
+    "categories": [
+        "defence"
+    ],
+    "summary": " This memorandum outlines the conditions and the fees for providing information, allowing inspection or access to records, or making or certifying copies. This memorandum has been revised in accordance with the Paper Burden Reduction Initiative.  In no case will a person other than the importer, exporter, or authorized agent be provided with copies of customs records or be allowed to inspect records on file with Canada Border Services Agency (CBSA) A broker will not be permitted to inspect a record, or obtain copies of a record that they did not prepare or file with the CBSA in the first instance, without the prior written consent.  If domestic goods delivered as ships’ stores are subject to a GST or HST refund, the vendor is entitled to an extra copy of form K36A, Ship’s Stores Declaration and Clearance Certificate, without charge. A landing certificate may be supplied only to the exporter, importer, or an authorized agent.  Fees will be charged as specified in sections 4 and 5 of the Regulations contained in this Memorandum. The following are examples of charges in specific situations: Application fee $ 5.00 Reproduction (30 pages at $0.20) $ 6.00 Plus GST at 5% for a total of $ 11.55 or HST at 13%."
+}

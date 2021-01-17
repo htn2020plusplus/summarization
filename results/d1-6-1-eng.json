@@ -1,0 +1,32 @@
+{
+    "policy": "Memorandum",
+    "named_entities": {
+        "entities": [
+            {
+                "end": 73,
+                "entity_group": "organization",
+                "score": 0.9992329180240631,
+                "start": 44,
+                "word": "Canada Border Services Agency"
+            },
+            {
+                "end": 79,
+                "entity_group": "organization",
+                "score": 0.9993476867675781,
+                "start": 75,
+                "word": "CBSA"
+            },
+            {
+                "end": 213,
+                "entity_group": "organization",
+                "score": 0.9990368783473969,
+                "start": 209,
+                "word": "CBSA"
+            }
+        ]
+    },
+    "categories": [
+        "defence"
+    ],
+    "summary": " This memorandum explains the policy of the Canada Border Services Agency (CBSA) regarding persons who wish to import commercial goods under Section 32 of the Customs Act, as the agent of another person.  The CBSA does not accept an electronic check-off box as an acceptable substitute for a wet (ink on paper) signature for the purpose of an agency agreement. Facsimile copies of the written authority may be accepted. An employee of an importer can transact business on behalf of his or her employer without being considered an agent."
+}

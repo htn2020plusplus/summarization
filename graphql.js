@@ -187,22 +187,25 @@ loadNamedEntities(results).then(async entities => {
             }
             `
 
-            console.log(idx)
-
             return request('http://localhost:3000/', findQuery, { entity: idx.entity })
         })
 
         const idx = (await Promise.all(promises)).map(idx => idx.searchIndex.id)
         return {
+            id: evt.id,
             indices: idx,
+            policy: evt.policy,
             text: evt.summary,
-            description: "Policy uploaded to Legist",
+            categories: evt.categories,
+            filename: `${f}.pdf`,
+            description: `Policy uploaded to Legist.`,
             timestamp: new Date(),
         }
     })
 
     const docs = await Promise.all(idx_promises)
-    const promises = docs.map(doc => {
+    for (var i = 0; i < docs.length; i++) {
+        const doc = docs[i]
         const mutate = gql`
         mutation CreateEvent($indices: [String!]!, $description: String!, $text: String!, $timestamp: String!) {
             createEvent(data: { description: $description, text: $text, timestamp: $timestamp, indices: $indices }) {
@@ -211,15 +214,83 @@ loadNamedEntities(results).then(async entities => {
                 }
                 description
                 text
+                id
                 timestamp
             }
         }
         `
 
-        return request('http://localhost:3000/', mutate, doc)
+        const r = await request('http://localhost:3000/', mutate, doc)
+        console.log(`progress: ${i + 1}/${docs.length}`)
+    }
+
+    return docs
+}).then(async docs => {
+    // find common policies
+    const policies = docs.reduce((accumulator, doc) => {
+        const policy = doc.policy ?? doc.filename
+        accumulator[policy] = [...(accumulator[policy] || []), doc]
+        return accumulator // group by category
+    }, {})
+
+    console.log(policies)
+    // iterate policies and generate
+    const policy_docs = Object.keys(policies).map(async policy => {
+        const legislativeEvents = policies[policy]
+        const le_ids = legislativeEvents.map(le => le.id)
+        console.log(le_ids)
+
+        // lookup categories
+        const cat_set = new Set()
+        legislativeEvents.forEach(le => le.categories.forEach(cat => cat_set.add(cat)))
+        const categories = Array.from(cat_set)
+        console.log(categories)
+
+
+        const findQuery = gql`
+        query FetchCategory {
+            categories {
+                id
+            }
+        }
+        `
+
+        const ids = await request('http://localhost:3000/', findQuery)
+        console.log(ids)
+
+        const cat_ids = ids.map(idx => idx.searchCategory.id)
+        const isSingle = legislativeEvents.length === 1
+
+        return {
+            legislationEvents: le_ids,
+            categories: cat_ids,
+            title: policy,
+            text: "not needed",
+            description: isSingle ? "This is a standalone policy." : "WIP: find a good description here",
+        }
     })
 
-    return Promise.all(promises)
-}).then(evts => {
+    for (var i = 0; i < policy_docs.length; i++) {
+        const doc = policy_docs[i]
+        const mutate = gql`
+        mutation CreatePoliy($categories: [String!]!, $legislationEvents: [String!]!, $text: String!, $title: String!, $description: String!) {
+            createPolicy(data: { categories: $categories, legislationEvents: $legislationEvents, text: $text, title: $title, description: $description }) {
+                categories {
+                    id
+                }
+                legislationEvents {
+                    id
+                }
+                description
+                text
+                title
+            }
+        }
+        `
 
-}).then(console.log)
+        const r = await request('http://localhost:3000/', mutate, doc)
+        console.log(`progress: ${i + 1}/${policy_docs.length}`)
+    }
+
+    return policy_docs
+}).then(console.log).then(() => console.log("Finished!"))

@@ -1,0 +1,88 @@
+{
+    "policy": "Memorandum",
+    "named_entities": {
+        "entities": [
+            {
+                "end": 77,
+                "entity_group": "organization",
+                "score": 0.9762963056564331,
+                "start": 57,
+                "word": "Government of Canada"
+            },
+            {
+                "end": 142,
+                "entity_group": "organization",
+                "score": 0.8648760120073954,
+                "start": 120,
+                "word": "Canada Border Services"
+            },
+            {
+                "end": 405,
+                "entity_group": "organization",
+                "score": 0.8460677862167358,
+                "start": 397,
+                "word": "Treasury"
+            },
+            {
+                "end": 615,
+                "entity_group": "organization",
+                "score": 0.9990497976541519,
+                "start": 587,
+                "word": "Canada Border Service Agency"
+            },
+            {
+                "end": 809,
+                "entity_group": "organization",
+                "score": 0.9981117248535156,
+                "start": 805,
+                "word": "CBSA"
+            },
+            {
+                "end": 837,
+                "entity_group": "organization",
+                "score": 0.9984776377677917,
+                "start": 833,
+                "word": "CBSA"
+            },
+            {
+                "end": 2082,
+                "entity_group": "location",
+                "score": 0.9553804993629456,
+                "start": 2073,
+                "word": "Brunswick"
+            },
+            {
+                "end": 2096,
+                "entity_group": "location",
+                "score": 0.9951053261756897,
+                "start": 2084,
+                "word": "Newfoundland"
+            },
+            {
+                "end": 2109,
+                "entity_group": "location",
+                "score": 0.9886818528175354,
+                "start": 2101,
+                "word": "Labrador"
+            },
+            {
+                "end": 2126,
+                "entity_group": "location",
+                "score": 0.9644280076026917,
+                "start": 2115,
+                "word": "Nova Scotia"
+            },
+            {
+                "end": 2351,
+                "entity_group": "organization",
+                "score": 0.967130720615387,
+                "start": 2348,
+                "word": "CBS"
+            }
+        ]
+    },
+    "categories": [
+        "defence"
+    ],
+    "summary": " Revisions made to this memorandum are the result of the Government of Canada Paper Burden Reduction Initiative and the Canada Border Services parallel Business Simplification Initiative. The Regulations have not been revised.  Transportation, Accommodation and Meals [SOR/95-200, s. 1(F): Transportation, accommodation and meals provided shall be comparable in quality to those authorized by the Treasury Board Travel Directive in effect at the time that the special service is provided. Security is required to guarantee the payment of charges incurred in providing that service.  The Canada Border Service Agency provides authorized service Monday through Friday, exclusive of statutory holidays to approximately 1200 locations nationally. Hours of operation are available by visiting the directory of CBSA offices located on the CBSA website at www.cbsa.ca.  The authorized hours of service for the acceptance of reports from operators of aircraft, trains, vessels and motor vehicles is the time between the commencement of the first authorized shift and the termination of the final authorized shift at any particular release point.  When a statutory holiday falls on a weekend, the day designated as the holiday in lieu thereof will be considered the statutory holiday. The amount of special services fee to be charged is dependant on whether the officer performing the special service is on duty on an authorized shift.  In any case where more than one special service prescribed in section 4 of the Regulations is provided to one party during one call, the special service charge will be assessed as if only one service were provided. The total time spent in performing the services will be calculated in determining the amount to be charged. There are two exceptions to this practice and these are outlined in the two following paragraphs.  The provision of special services under the Special Services (Customs) Regulations is generally not subject to either the goods and services tax (GST) or the harmonized sales tax (HST) in the participating provinces of New Brunswick, Newfoundland and Labrador, and Nova Scotia.  Customs Bonded Warehouses are not to be assessed for service to an individually owned and operated fishing vessel. Charges are applicable when service is given outside authorized hours or beyond the jurisdiction of the CBSA office.  Special services charges and transportation costs will not apply, unless the activity involves a commercial operation. Importers/owners or brokers are not required to make a written application to request extended release privileges prior to/or at the time of importation.  Bulk: (1) A homogeneous shipment of one commodity that is loose (not individually packaged) or in mass (indefinite shape) (2) Goods that would otherwise qualify under (d)(1), but are unitized by bagging, boxing, palletizing, strapping, spooling, etc. (e) Precious Goods: Goods which, for security reasons, require quick release when they arrive in Canada, e.g., gold ingots, diamonds, original works of art. (g) Aircraft, Vehicle and Vessel Emergency Repairs: Repairs which resulted from an unforeseen contingency that occurred outside of Canada."
+}
