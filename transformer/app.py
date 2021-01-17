@@ -1,5 +1,5 @@
-from flask import request
-from flask import jsonify
+from werkzeug.utils import secure_filename
+from flask import request, jsonify, request, redirect, url_for
 import flask
 import logging
 import os
@@ -8,6 +8,8 @@ import torch
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForTokenClassification
 
 app = flask.Flask(__name__)
+app.config['UPLOAD_FOLDER'] = "../dataset"
+ALLOWED_EXTENSIONS = {'pdf'}
 
 # ner_labels = [
 #     "O",       # Outside of a named entity
@@ -25,6 +27,27 @@ app = flask.Flask(__name__)
 def healthCheck():
     logging.info("Health check ping received")
     return jsonify({'status': 'healthy'}), 200
+
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+@app.route('/upload', methods=['POST'])
+def upload_file():
+    if request.method == 'POST':
+        # check if the post request has the file part
+        if 'file' not in request.files:
+            return "no file part", 400
+        file = request.files['file']
+        # if user does not select file, browser also
+        # submit an empty part without filename
+        if file.filename == '':
+            return "no selected file", 400
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            return "success", 200
 
 
 @app.route('/api/summarize', methods=['POST'])
